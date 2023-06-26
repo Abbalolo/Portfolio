@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Ruda', sans-serif; 
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  
+}
+
+ /* body{
+  /* background-image:url("https://c4.wallpaperflare.com/wallpaper/253/962/403/black-dark-mask-plague-doctor-wallpaper-thumb.jpg");
+  background-position: cover; */
+ 
+  */
+
+.navigator li a.active{
+  color:red;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+ /* *::-webkit-scrollbar-track {
+  background: rgb(11, 105, 255);
+  border-radius: 5px;
+}  */
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(45, 109, 211, 0.826);
+ 
+}
+
+

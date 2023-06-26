@@ -1,0 +1,54 @@
+
+
+
+.navigator{
+    position: fixed;
+    height: 66%;
+    background-color: rgb(76, 76, 86);
+    width: 3px;
+    right:5.9em ;
+    top: 9em;
+    text-align: center;
+    transition: .3s all;
+    border-radius: 5px;
+    
+    
+
+}
+
+
+.navigator li {
+   list-style-type: none;
+   padding: 1.5em 0;
+   position: relative;
+   display: flex;
+   align-items: center;
+   
+   
+   
+}
+
+.navigator li::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 5px;
+    background: white;
+    
+    
+}
+
+.navigator li a{
+    margin-left: 1em;
+
+}
+
+li:hover::before{
+    background-color: rgb(23, 111, 254);
+}
+
+li a:hover{
+    color: rgb(23, 111, 254);
+}
+
+
