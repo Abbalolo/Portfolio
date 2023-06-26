@@ -17,12 +17,12 @@ function Project() {
               <img className="" src={picture} alt="pic" />
               <div className="absolute h-full w-full backdrop-blur-sm flex items-center justify-center -bottom-2 group-hover:bottom-0 opacity-0 group-hover:opacity-100 duration-300 gap-5">
                 <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank"to="https://github.com/Abbalolo/Dictionary-App.git">
+                  <Link target="_blank"to="https://github.com/Abbalolo/Blog-App.git">
                     Code
                   </Link>
                 </button>
                 <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank" to="#">Live Demo</Link>
+                  <Link target="_blank" to="https://loloblog.netlify.app">Live Demo</Link>
                 </button>
               </div>
             </div>
@@ -50,7 +50,7 @@ function Project() {
           </div>
 
           <div className="flex flex-col">
-            <h3 className="font-bold "><Link className="hover:underline hover:text-blue-900 flex items-center gap-3 " to="" >Dictionary App <AiOutlineArrowRight/></Link></h3>
+            <h3 className="font-bold "><Link className="hover:underline hover:text-blue-900 flex items-center gap-3 " target="_blank" to="https://loloblog.netlify.app" >Blog App <AiOutlineArrowRight/></Link></h3>
             <p className="text-sm dark:text-gray-400 text-gray-600 pt-2 pr-2">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
               saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit 

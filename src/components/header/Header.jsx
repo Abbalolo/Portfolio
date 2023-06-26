@@ -29,6 +29,10 @@ function Header() {
     
   }
 
+  const closeNav = () => {
+    setHideNav(!hideNav)
+  }
+
   return (
     
     <div className="px-3 md:px-8 dark:text-white antialiased md:mx-16">
@@ -50,13 +54,13 @@ function Header() {
             <button className="ml-4 z-50 md:hidden" onClick={handleNav}>
               {!openNav ? <AiOutlineMenu size={20}/> : <AiOutlineClose size={20}/>}
               </button>
-            <div className={openNav ? "pt-10  bg-white dark:bg-zinc-900 fixed shadow-md left-0 top-0 w-[60%] h-full z-50 px-10 duration-500 ease-in-out" 
+            <div onClick={closeNav} className={openNav ? "pt-10  bg-white dark:bg-zinc-900 fixed shadow-md left-0 top-0 w-[60%] h-full z-50 px-10 duration-500 ease-in-out" 
             : "fixed left-[-100%]"}>
-             <li onClick={!hideNav} className="py-3 border-b  border-gray-300  dark:border-gray-700"><NavLink id="home" to="/">Home</NavLink></li>
-             <li onClick={!hideNav} className="py-3 border-b border-gray-300 dark:border-gray-700"><NavLink id="home" to="/about">About</NavLink></li>
-             <li onClick={!hideNav} className="py-3 border-b border-gray-300  dark:border-gray-700"><NavLink id="home" to="/service">Service</NavLink></li>
-             <li onClick={!hideNav} className="py-3 border-b border-gray-300 dark:border-gray-700"><NavLink id="home" to="/project">Projects</NavLink></li>
-             <li onClick={!hideNav} className="py-3"><NavLink to="/contact">Contact</NavLink></li>                      
+             <li className="py-3 border-b  border-gray-300  dark:border-gray-700"><NavLink id="home" to="/">Home</NavLink></li>
+             <li className="py-3 border-b border-gray-300 dark:border-gray-700"><NavLink id="home" to="/about">About</NavLink></li>
+             <li className="py-3 border-b border-gray-300  dark:border-gray-700"><NavLink id="home" to="/service">Service</NavLink></li>
+             <li className="py-3 border-b border-gray-300 dark:border-gray-700"><NavLink id="home" to="/project">Projects</NavLink></li>
+             <li className="py-3"><NavLink to="/contact">Contact</NavLink></li>                      
             </div>
         </ul>
       </nav>
