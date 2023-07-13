@@ -80,6 +80,7 @@ function Home() {
           <AiFillTwitterCircle className="hover:text-blue-300 duration-300" />
         </Link>
       </div>
+      
     </section>
   );
 }

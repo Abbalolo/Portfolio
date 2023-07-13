@@ -13,7 +13,7 @@ function Project() {
         PortFolio
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 mb-10 gap-10">
-        <div className="shadow-md w-full h-full flex gap-5 py-2">
+        <div className="hover:shadow-md w-full h-full flex gap-5 py-2">
           <div className="overflow-hidden">
             <div className="group relative">
               <img className="" src={blog} alt="pic" />
@@ -40,7 +40,7 @@ function Project() {
           </div>
 
           <div className="flex flex-col">
-            <h3 className="font-bold "><Link className="hover:underline hover:text-blue-900 flex items-center gap-3 " target="_blank" to="https://loloblog.netlify.app" >Blog App <AiOutlineArrowRight/></Link></h3>
+            <h3 className="font-bold "><Link className="hover:underline hover:text-blue-900 flex items-center gap-3 " target="_blank" to="https://github.com/Abbalolo/Blog-App.git" >Blog App <AiOutlineArrowRight/></Link></h3>
             <p className="text-sm dark:text-gray-400 text-gray-600 pt-2 pr-2">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
               saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit 
@@ -49,7 +49,7 @@ function Project() {
         </div>
 
 
-        <div className="shadow-md w-full h-full flex gap-5 py-2">
+        <div className="hover:shadow-md w-full h-full flex gap-5 py-2">
           <div className="overflow-hidden">
             <div className="group relative">
               <img className="" src={ecommerce} alt="pic" />
@@ -79,7 +79,7 @@ function Project() {
           </div>
 
           <div className="flex flex-col">
-            <h3 className="font-bold "><Link className="hover:underline hover:text-blue-900 flex items-center gap-3 " target="_blank" to="https://loloblog.netlify.app" >E-commerce App <AiOutlineArrowRight/></Link></h3>
+            <h3 className="font-bold "><Link className="hover:underline hover:text-blue-900 flex items-center gap-3 " target="_blank" to="https://github.com/Abbalolo/E-commerce.git" >E-commerce App <AiOutlineArrowRight/></Link></h3>
             <p className="text-sm dark:text-gray-400 text-gray-600 pt-2 pr-2">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
               saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit 
@@ -88,7 +88,7 @@ function Project() {
         </div>
 
 
-        <div className="shadow-md w-full h-full flex gap-5 py-2">
+        <div className="hover:shadow-md w-full h-full flex gap-5 py-2">
           <div className="overflow-hidden">
             <div className="group relative">
               <img className="" src={dictionary} alt="pic" />
@@ -124,7 +124,7 @@ function Project() {
         </div>
 
 
-        <div className="shadow-md w-full h-full flex gap-5 py-2">
+        <div className="hover:shadow-md  w-full h-full flex gap-5 py-2">
           <div className="overflow-hidden">
             <div className="group relative">
               <img className="" src={blog} alt="pic" />

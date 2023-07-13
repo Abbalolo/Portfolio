@@ -134,12 +134,6 @@ const changeClickL6 = () => {
               opacity: "0.8"
             })}>{home5}</NavLink></li> 
 
-        <li className={styles.left}><NavLink onMouseEnter={changeClick6} onMouseLeave={changeClickL6}  to="/hire" style={({ isActive }) => ({
-              color: isActive ? '#fff' : 'black' ,
-              background: isActive ? '#4169E1' : 'white',
-              padding: "2px",
-              opacity: "0.8"
-            })}>{home6}</NavLink></li> 
       </div>
     </div>
   )

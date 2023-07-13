@@ -14,8 +14,8 @@ function About() {
   }, [])
 
   return (
-    <section className="md:mx-16 antialiased px-6 md:px-10">
-      <div >
+    <section className="md:mx-16 antialiased px-6 md:px-10 h-screen">
+      <div>
         <div className="lg:flex">
         <div  className=" ">
           <img data-aos="zoom-in"
