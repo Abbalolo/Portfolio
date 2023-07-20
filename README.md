@@ -29,8 +29,8 @@ Check out the live demo of the portfolio website [here](https://your-portfolio-d
 
 1. Update the content in the `src/data` folder with your own information.
 2. Customize the styles by modifying the Tailwind CSS classes in the components.
-3. Start the development server: `npm start`
-4. Open your browser and visit: `http://localhost:3000`
+3. Start the development server: `npm run dev`
+4. Open your browser and visit: `http://localhost:51`
 
 ## Technologies Used
 
