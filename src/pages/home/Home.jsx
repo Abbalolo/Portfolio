@@ -11,13 +11,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+
+
 function Home() {
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
-    <section className="text-center p-10 md:mx-16 antialiased dark:bg-[#121212] dark:text-white">
+    <section className="text-center px-10 md:mx-16 antialiased dark:bg-[#121212] dark:text-white">
       <div className="lg:flex  lg:items lg:h-full lg:w-full lg:flex-row-reverse">
         <div
           data-aos="fade-in"
@@ -80,7 +82,7 @@ function Home() {
           <AiFillTwitterCircle className="hover:text-blue-300 duration-300" />
         </Link>
       </div>
-      
+
     </section>
   );
 }

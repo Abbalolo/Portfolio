@@ -1,5 +1,5 @@
 import { AiFillHtml5 } from "react-icons/ai";
-import { FaBootstrap, FaCss3, FaReact } from "react-icons/fa";
+import { FaCss3, FaReact } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import { BsFiletypeScss } from "react-icons/bs";
@@ -14,7 +14,7 @@ function About() {
   }, [])
 
   return (
-    <section className="md:mx-16 antialiased px-6 md:px-10 h-screen">
+    <section className="md:mx-16 antialiased px-6 md:px-10 h-full">
       <div>
         <div className="lg:flex">
         <div  className=" ">
@@ -68,7 +68,6 @@ function About() {
               <FaCss3 className="dark:text-gray-500 text-blue-600 hover:scale-150 duration-300" size={60} />
               <DiJavascript1 className="dark:text-gray-500 text-yellow-400 hover:scale-150 duration-300" size={60} />
               <BsFiletypeScss className="dark:text-gray-500 text-red-500 hover:scale-150 duration-300 " size={60} />
-              <FaBootstrap className="dark:text-gray-500 text-purple-700 hover:scale-150 duration-300" size={60} />
               <SiTailwindcss className="dark:text-gray-500 text-blue-400 hover:scale-150 duration-300" size={60} />
               <FaReact className="dark:text-gray-500 text-blue-500 hover:scale-150 duration-300" size={60} />
             </div>
