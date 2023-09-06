@@ -40,9 +40,8 @@ function Header() {
             Ibrahim Lawal Abba
           </h1>
         </div>
-        <ul className="flex justify-center items-center">
-          <li>
-            <button
+        <ul className="flex items-center">
+          <li
               className="cursor-pointer text-xl"
               onClick={handleToggleDarkMode}
             >
@@ -51,7 +50,7 @@ function Header() {
               ) : (
                 <BsFillBrightnessHighFill />
               )}
-            </button>
+            
           </li>
           <li className="bg-gradient-to-r duration-300 hidden md:flex hover:text-red-500 hover:scale-110 shadow-md from-blue-700 to-teal-600 py-1 px-2 ml-5 rounded-md">
             <Link to="#" className="hover:text-red-500 text-white">
