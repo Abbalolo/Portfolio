@@ -36,7 +36,7 @@ function Project() {
                 React
               </div>
               <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                Jso
+                Json
               </div>
             </div>
           </div>

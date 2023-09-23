@@ -58,7 +58,7 @@ function Contact() {
         Let Talk
       </h2>
       <div className="grid md:grid-cols-2 gap-3 mb-5">
-        <div className="flex gap-5 items-center py-5 hover:shadow-lg">
+        <div className="flex gap-5 items-center py-5">
           <div className="w-30 bg-slate-300 p-3  dark:text-blue-700 dark:bg-black rounded-full">
             <CiLocationOn className="text-xl" />
           </div>
@@ -70,13 +70,13 @@ function Contact() {
             </p>
           </div>
         </div>
-        <div className="flex gap-5 items-center py-5 hover:shadow-lg">
+        <div className="flex gap-5 items-center py-5">
           <div className="w-30 bg-slate-300 p-3 dark:text-blue-700 dark:bg-black rounded-full">
             <BiShareAlt />
           </div>
 
           <div className="text-start">
-            <h3 className="font-extrabold text-xl">My Address</h3>
+            <h3 className="font-extrabold text-xl">Social Media</h3>
             <ul className="flex gap-1">
               <li>
                 <Link target="_blank" to="https://web.facebook.com/lolo.fundz/">
@@ -99,7 +99,7 @@ function Contact() {
             </ul>
           </div>
         </div>
-        <div className="flex gap-5 items-center py-5 hover:shadow-lg">
+        <div className="flex gap-5 items-center py-5 ">
           <div className="w-30 bg-slate-300 dark:text-blue-700 dark:bg-black p-3 rounded-full">
             <AiOutlineMail />
           </div>
@@ -108,7 +108,7 @@ function Contact() {
             <p className="text-gray-500">abbalolo360@gmail.com</p>
           </div>
         </div>
-        <div className="flex gap-5 items-center py-5 hover:shadow-lg">
+        <div className="flex gap-5 items-center py-5 ">
           <div className="w-30 bg-slate-300  dark:text-blue-700 dark:bg-black p-3 rounded-full">
             <BiPhoneCall />
           </div>
@@ -155,7 +155,7 @@ function Contact() {
         </div>
         <button
           type="submit"
-          className="block mx-auto my-9 bg-gradient-to-r duration-300 hover:text-red-500 hover:scale-110 shadow-md from-blue-700 to-teal-600 py-2 px-7 w-full"
+          className="block mx-auto text-white my-5 bg-gradient-to-r duration-300 hover:text-red-500 hover:scale-110 shadow-md from-blue-700 to-teal-600 py-2 px-7 w-full"
         >
           Send
         </button>

@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -10,6 +10,10 @@ import Typed from "react-typed";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import About from "../about/About";
+import Services from "../services/Services";
+import Project from "../project/Project";
+import Contact from "../contact/Contact";
 
 
 
@@ -19,7 +23,8 @@ function Home() {
   }, []);
 
   return (
-    <section className="text-center px-10 md:mx-16 antialiased dark:bg-[#121212] dark:text-white">
+    <>
+    <section className="text-center mb-10 px-10 md:mx-16 antialiased dark:bg-[#121212] dark:text-white">
       <div className="lg:flex  lg:items lg:h-full lg:w-full lg:flex-row-reverse">
         <div
           data-aos="fade-in"
@@ -53,21 +58,20 @@ function Home() {
           >
             As a frontend developer, I strive to create immersive digital
             experiences that captivate users and push the boundaries of what's
-            possible on the web.With a relentless passion for innovation and an
-            unwavering commitment to excellence
+            possible on the web.
           </p>
           <button
             data-aos="zoom-in"
-            className="block mx-auto my-9 md:m-0 bg-gradient-to-r duration-300 hover:text-red-500 hover:scale-110 shadow-md from-blue-700 to-teal-600 py-3 px-7 "
+            className="block mx-auto md:m-0 bg-gradient-to-r duration-300 hover:text-red-500 hover:scale-110 shadow-md from-blue-700 to-teal-600 py-3 px-7 "
           >
-            <Link to="/">Hire Me</Link>
+            <Link className="text-white" to="/">Hire Me</Link>
           </button>
         </div>
       </div>
 
       <div
         data-aos="zoom-right"
-        className="flex text-5xl justify-center gap-4 py-3 text-gray-600"
+        className="flex text-5xl mt-5 justify-center gap-4 py-3 text-gray-600"
       >
         <Link target="_blank" to="https://web.facebook.com/lolo.fundz/">
           <AiFillFacebook className="hover:text-blue-700 duration-300" />
@@ -84,6 +88,11 @@ function Home() {
       </div>
 
     </section>
+    <About/>
+    <Services/>
+    <Project/>
+    <Contact/>
+    </>
   );
 }
 

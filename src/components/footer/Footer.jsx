@@ -8,7 +8,7 @@ function Footer() {
  
   const [year] = useState(fullYear)
   return (
-    <section className="bg-black/50 w-full h-full p-5 text-center">
+    <section className="bg-black/50 mt-10 w-full h-full p-5 text-center">
      &copy; {year}
     </section>
   )
