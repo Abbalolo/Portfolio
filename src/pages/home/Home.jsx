@@ -24,7 +24,7 @@ function Home() {
 
   return (
     <>
-    <section className="text-center mb-10 px-10 md:mx-16 antialiased dark:bg-[#121212] dark:text-white">
+    <section className="mx-5 md:mx-10 lg:mx-16 dark:bg-[#121212] dark:text-white">
       <div className="lg:flex  lg:items lg:h-full lg:w-full lg:flex-row-reverse">
         <div
           data-aos="fade-in"
@@ -71,7 +71,7 @@ function Home() {
 
       <div
         data-aos="zoom-right"
-        className="flex text-5xl mt-5 justify-center gap-4 py-3 text-gray-600"
+        className="flex text-5xl md:hidden mt-5 justify-center gap-4 py-3 text-gray-600"
       >
         <Link target="_blank" to="https://web.facebook.com/lolo.fundz/">
           <AiFillFacebook className="hover:text-blue-700 duration-300" />
@@ -86,7 +86,6 @@ function Home() {
           <AiFillTwitterCircle className="hover:text-blue-300 duration-300" />
         </Link>
       </div>
-
     </section>
     <About/>
     <Services/>

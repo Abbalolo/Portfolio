@@ -14,19 +14,18 @@ function About() {
   }, [])
 
   return (
-    <section className="md:mx-16 antialiased px-6 md:px-10 h-full">
-      <div>
-        <div className="lg:flex">
-        <div  className=" ">
+    <section className="lg:mx-16 mx-5 md:mb-10 md:mx-10 md:mt-10 h-full ">
+       <h2 data-aos="fade-left" className="text-3xl mt-5 mb-5 md:text-3xl text-blue-700">About</h2>
+        <div className="md:flex md:gap-8">
+        <div  className="md:w-10/12 lg:w-96 ">
           <img data-aos="zoom-in"
-            className="w-full h-full object-contain md:w-9/12 hidden lg:flex dark:grayscale"
+            className="w-full h-full object-contain dark:grayscale"
             src={Abba}
             alt="ibrahim"
           />
         </div>
-        <div>
-          <h2 data-aos="fade-left" className="text-2xl md:text-3xl text-blue-700">About</h2>
-          <div className="mt-5 lg:grid lg:grid-cols-2">
+        <div className="">
+          <div className="mt-5 ">
             <div>
               <p data-aos="fade-right" className=" leading-7 text-gray-800 dark:text-gray-400">
                 Hello there! I am Ibrahim Lawal Abba, a dedicated and
@@ -51,13 +50,13 @@ function About() {
         </div>
         
 
-        <div className="dark:grayscale brightness-75 mt-5">
+        {/* <div className="dark:grayscale brightness-75 mt-5">
           <img data-aos="fade-in"
             className="w-full h-full object-contain md:w-9/12 lg:hidden"
             src={Abba}
             alt="ibrahim"
           />
-        </div>
+        </div> */}
 
         <div className="mt-10 md:hidden">
           <h2 className="text-2xl md:text-3xl font-semibold text-blue-700 mb-5 md:text-center lg:mb-5">
@@ -72,7 +71,6 @@ function About() {
               <FaReact className="dark:text-gray-500 text-blue-500 hover:scale-150 duration-300" size={60} />
             </div>
         </div>
-      </div>
     </section>
   );
 }

@@ -96,7 +96,7 @@ const changeClickL6 = () => {
 
 
   return (
-    <div className={`relative z-50  hidden md:block`}>
+    <div className={`relative z-50 hidden md:block`}>
       <div className={styles.navigator}>
         <li  className={styles.left}><NavLink onMouseEnter={changeClick} onMouseLeave={changeClickL1} to="/"style={({ isActive }) => ({
               color: isActive ? '#fff' : 'black' ,

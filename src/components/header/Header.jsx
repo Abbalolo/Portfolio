@@ -31,9 +31,9 @@ function Header() {
   };
 
   return (
-    <div className="px-3 md:px-8 dark:text-white antialiased md:mx-16">
+    <div className=" dark:text-white mx-5 lg:mx-16 md:mx-10">
       {openNav && <Blur handleNav={handleNav} />}
-      <nav className="py-7 mb-12 flex justify-between items-center">
+      <nav className="py-7 flex justify-between items-center">
         <div className="flex items-center">
           <img src={logo} className="w-10 h-30 " alt="Ibrahim" />
           <h1 className={`font-semibold capitalize font-serif text-gray-500`}>
