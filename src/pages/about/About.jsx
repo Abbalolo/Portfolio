@@ -27,8 +27,8 @@ function About() {
 
 
   return (
-    <section className="lg:mx-16 mx-5 md:mb-10 md:mx-10 md:mt-10 h-full">
-       <h2 data-aos="fade-left" className="text-3xl mt-5 mb-5 md:text-4xl font-bold text-blue-500">About</h2>
+    <section className="lg:mx-16 mx-5 md:mb-10 md:mx-10 h-full">
+       <h2 data-aos="fade-left" className="text-3xl mt-5  md:text-4xl font-bold text-blue-500">About</h2>
         
        <article>
         {contents.map((content) => (
@@ -41,6 +41,7 @@ function About() {
   </ul>
   ))}
 </article>
+
     </section>
   );
 }

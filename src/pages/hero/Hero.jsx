@@ -1,11 +1,11 @@
 import React from 'react'
 
 
-import {
-    AiFillTwitterCircle,
-    AiFillLinkedin,
-    AiFillFacebook,
-  } from "react-icons/ai";
+// import {
+//     AiFillTwitterCircle,
+//     AiFillLinkedin,
+//     AiFillFacebook,
+//   } from "react-icons/ai";
   import clear from "../../assets/clear.png";
   import { Link } from "react-router-dom";
   import Typed from "react-typed";
@@ -18,7 +18,7 @@ function Hero() {
         AOS.init();
       }, []);
   return (
-    <section className="lg:h-full mx-5 lg:mt-24 mt-10 md:mx-10 lg:mx-16">
+    <section className="h-[90vh] mx-5 flex items-center justify-center md:mx-10 lg:mx-16">
     <div className="w-full flex justify-center">
       {/* lg:flex  lg:items lg:h-full lg:w-full lg:flex-row-reverse */}
       {/* <div
@@ -59,7 +59,7 @@ function Hero() {
           experiences that captivate users and push the boundaries of what's
           possible on the web.
         </p>
-        <div className=' md:m-0 my-2'>
+        <div className=' md:m-0 my-5'>
         <button
           data-aos="zoom-in"
           className="block  bg-gradient-to-r duration-300 hover:text-red-500 hover:scale-110 shadow-md from-blue-700 to-teal-600 py-3 px-7 "
@@ -70,23 +70,7 @@ function Hero() {
       </div>
     </div>
 
-    <div
-      data-aos="zoom-right"
-      className="flex text-5xl md:hidden justify-center gap-4 py-3 text-gray-600"
-    >
-      <Link target="_blank" to="https://web.facebook.com/lolo.fundz/">
-        <AiFillFacebook className="hover:text-blue-700 duration-300" />
-      </Link>
-      <Link
-        target="_blank"
-        to="https://www.linkedin.com/in/ibrahim-lawal-2772a8243/"
-      >
-        <AiFillLinkedin className="hover:text-blue-500 duration-300" />
-      </Link>
-      <Link target="_blank" to="https://twitter.com/Ibrahim46284657">
-        <AiFillTwitterCircle className="hover:text-blue-300 duration-300" />
-      </Link>
-    </div>
+    
   </section>
   )
 }

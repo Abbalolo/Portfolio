@@ -1,3 +1,4 @@
+import { CgDarkMode } from "react-icons/cg"; 
 import { Link, NavLink } from "react-router-dom";
 import { BsFillMoonStarsFill, BsFillBrightnessHighFill } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -44,9 +45,9 @@ function Header() {
               onClick={handleToggleDarkMode}
             >
               {theme === "light" ? (
-                <BsFillBrightnessHighFill />
+                <CgDarkMode  />
                 ) : (
-                <BsFillMoonStarsFill />
+                  <CgDarkMode  />
               )}
             
           </li>
