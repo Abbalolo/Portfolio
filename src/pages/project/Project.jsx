@@ -9,298 +9,102 @@ import {AiOutlineArrowRight} from "react-icons/ai"
 
 
 function Project() {
+  const portfolioCards = [
+  {
+   id: 1,
+   name: "PortFolio",
+   github: "https://github.com/Abbalolo/Mayor-portfolio.git",
+   host: "https://mayor-portfolio.netlify.app/",
+   image: portfolio,
+   language: ["Html", "Css", "Javascript", ] ,
+   description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit"
+  },
+  {
+   id: 2,
+   name: "Blog",
+   github: "https://github.com/Abbalolo/Blog-App.git",
+   image: blog,
+   language: ["React","Html", "Css", "Javascript", "Json" ] ,
+   description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit"
+  },
+  {
+   id: 3,
+   name: "Ecommerce",
+   github: "https://github.com/Abbalolo/E-commerce.git",
+   host: "https://mayor-portfolio.netlify.app/",
+   image: ecommerce,
+   language: ["React", "Html", "Scss","Css", "Javascript", "Redux", "FireBase" ] ,
+   description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit"
+  },
+  {
+   id: 4,
+   name: "Dictionary",
+   github: "https://github.com/Abbalolo/Dictionary-app.git",
+   host: "dictionaryspeech.netlify.app",
+   image: dictionary,
+   language: ["React", "Html","Css", "Javascript", "Api" ] ,
+   description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit"
+  },
+  {
+   id: 5,
+   name: "Todo",
+   github: "https://github.com/Abbalolo/my-todo-app.git",
+   host: "lohdev-todo.netlify.app",
+   image: todo,
+   language: ["React", "Javascript", "Html","Css" ] ,
+   description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit"
+  },
+  {
+   id: 5,
+   name: "Quiz",
+   github: "https://github.com/Abbalolo/my-react-quiz.git",
+   host: "https://lohdev-quiz.netlify.app",
+   image: quiz,
+   language: ["React", "Javascript", "Html","Css" ] ,
+   description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit"
+  },
+
+]
 
   return (
-    <section className="mx-5 lg:mx-16 md:mx-10 relative ">
+    <section className="mx-5 lg:mx-16 md:mx-10 relative">
       <h2 className="text-xl md:text-3xl text-blue-500 font-bold mb-5">
-        PortFolio
+        PortFolio.
       </h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 mb-10 gap-10">
+      <div  className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
 
-        <div className="hover:shadow-md w-full h-full flex gap-5 py-2">
-          <div className="overflow-hidden">
-            <div className="group relative">
-              <img className="" src={portfolio} alt="pic" />
-              <div className="absolute h-full w-full backdrop-blur-sm flex items-center justify-center -bottom-2 group-hover:bottom-0 opacity-0 group-hover:opacity-100 duration-300 gap-5">
-                <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank"to="https://github.com/Abbalolo/Mayor-portfolio.git">
-                    Code
-                  </Link>
-                </button>
-                <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank" to="https://mayor-portfolio.netlify.app/">Live Demo</Link>
-                </button>
-              </div>
+      {portfolioCards.map((card) => (
+        <div key={card.id} className="rounded-xl">
+         
+        <div className="relative rounded-2xl overflow-hidden h-full">
+          <img className="" src={card.image} alt="pic" />
+          <div className="absolute top-0 left-0 h-full w-full flex items-end justify-end duration-300 gap-5 backdrop-brightness-[55%]">
+
+          <div className="flex flex-col w-full p-3">
+             <h1 className="text-xl text-white font-extrabold">{card.name}</h1>
+             <p className="text-gray-100">Lorem ipsum dolor sit amet consectetur . </p>
+
+            <div className="flex flex-wrap gap-2 py-1">
+              {card.language.map((language, index) => (
+                 <span key={index} className="text-[12px] md:text-md text-white hover:bg-blue-500 hover:text-white bg-gray-400 rounded-2xl py-[2px] px-2 text-center duration-300 cursor-pointer">{language}</span>
+              ))}  
             </div>
-
-            <div className="mt-2 flex  flex-wrap gap-2 ">
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                HTML
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                CSS
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                JAVASCRIPT
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col">
-            <h3 className="font-bold "><Link className="hover:underline hover:text-blue-900 flex items-center gap-3 " target="_blank" to="https://github.com/Abbalolo/Blog-App.git" >Blog App <AiOutlineArrowRight/></Link></h3>
-            <p className="text-sm dark:text-gray-400 text-gray-600 pt-2 pr-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-              saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit 
-            </p>
-          </div>
-        </div>
         
-        <div className="hover:shadow-md w-full h-full flex gap-5 py-2">
-          <div className="overflow-hidden">
-            <div className="group relative">
-              <img className="" src={blog} alt="pic" />
-              <div className="absolute h-full w-full backdrop-blur-sm flex items-center justify-center -bottom-2 group-hover:bottom-0 opacity-0 group-hover:opacity-100 duration-300 gap-5">
-                <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank"to="https://github.com/Abbalolo/Blog-App.git">
-                    Code
-                  </Link>
-                </button>
-                {/* <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank" to="https://loloblog.netlify.app">Live Demo</Link>
-                </button> */}
-              </div>
-            </div>
-
-            <div className="mt-2 flex  flex-wrap gap-2 ">
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                React
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                Json
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col">
-            <h3 className="font-bold "><Link className="hover:underline hover:text-blue-900 flex items-center gap-3 " target="_blank" to="https://github.com/Abbalolo/Blog-App.git" >Blog App <AiOutlineArrowRight/></Link></h3>
-            <p className="text-sm dark:text-gray-400 text-gray-600 pt-2 pr-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-              saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit 
-            </p>
-          </div>
         </div>
 
-
-        <div className="hover:shadow-md w-full h-full flex gap-5 py-2">
-          <div className="overflow-hidden">
-            <div className="group relative">
-              <img className="" src={ecommerce} alt="pic" />
-              <div className="absolute h-full w-full backdrop-blur-sm flex items-center justify-center -bottom-2 group-hover:bottom-0 opacity-0 group-hover:opacity-100 duration-300 gap-5">
-                <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank"to="https://github.com/Abbalolo/E-commerce.git">
-                    Code
-                  </Link>
-                </button>
-                <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank" to="shopnowweb.netlify.app">Live Demo</Link>
-                </button>
-              </div>
-            </div>
-
-            <div className="mt-2 flex  flex-wrap gap-2 ">
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                React
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm">
-                Redux
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                FireBase
-              </div>
-            </div>
           </div>
-
-          <div className="flex flex-col">
-            <h3 className="font-bold "><Link className="hover:underline hover:text-blue-900 flex items-center gap-3 " target="_blank" to="https://github.com/Abbalolo/E-commerce.git" >E-commerce App <AiOutlineArrowRight/></Link></h3>
-            <p className="text-sm dark:text-gray-400 text-gray-600 pt-2 pr-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-              saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit 
-            </p>
-          </div>
+          
         </div>
 
+   
+    </div>
+          
+     ))}
 
-        <div className="hover:shadow-md w-full h-full flex gap-5 py-2">
-          <div className="overflow-hidden">
-            <div className="group relative">
-              <img className="" src={dictionary} alt="pic" />
-              <div className="absolute h-full w-full backdrop-blur-sm flex items-center justify-center -bottom-2 group-hover:bottom-0 opacity-0 group-hover:opacity-100 duration-300 gap-5">
-                <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank"to="https://github.com/Abbalolo/Dictionary-app.git">
-                    Code
-                  </Link>
-                </button>
-                <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank" to="dictionaryspeech.netlify.app">Live Demo</Link>
-                </button>
-              </div>
-            </div>
-
-            <div className="mt-2 flex  flex-wrap gap-2 ">
-            <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                React
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                Api
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col">
-            <h3 className="font-bold "><Link className="hover:underline hover:text-blue-900 flex items-center gap-3 " target="_blank" to="https://github.com/Abbalolo/Dictionary-app.git" >Dictionary App <AiOutlineArrowRight/></Link></h3>
-            <p className="text-sm dark:text-gray-400 text-gray-600 pt-2 pr-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-              saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit 
-            </p>
-          </div>
-        </div>
-
-
-         <div className="hover:shadow-md  w-full h-full flex gap-5 py-2">
-          <div className="overflow-hidden">
-            <div className="group relative">
-              <img className="border border-gray-300" src={todo} alt="pic" />
-              <div className="absolute h-full w-full backdrop-blur-sm flex items-center justify-center -bottom-2 group-hover:bottom-0 opacity-0 group-hover:opacity-100 duration-300 gap-5">
-                <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank"to="https://github.com/Abbalolo/my-todo-app.git">
-                    Code
-                  </Link>
-                </button>
-                <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank" to="lohdev-todo.netlify.app">Live Demo</Link>
-                </button>
-              </div>
-            </div>
-
-            <div className="mt-2 flex  flex-wrap gap-2 ">
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                Html
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                Css
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                Javascript
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                React
-              </div>
-             
-            </div>
-          </div>
-
-          <div className="flex flex-col">
-            <h3 className="font-bold "><Link className="hover:underline hover:text-blue-900 flex items-center gap-3 " target="_blank" to="lohdev-todo.netlify.app" >Todo App <AiOutlineArrowRight/></Link></h3>
-            <p className="text-sm dark:text-gray-400 text-gray-600 pt-2 pr-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-              saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit 
-            </p>
-          </div>
-        </div> 
-
-
-         <div className="hover:shadow-md  w-full h-full flex gap-5 py-2">
-          <div className="overflow-hidden">
-            <div className="group relative">
-              <img className="" src={quiz} alt="pic" />
-              <div className="absolute h-full w-full backdrop-blur-sm flex items-center justify-center -bottom-2 group-hover:bottom-0 opacity-0 group-hover:opacity-100 duration-300 gap-5">
-                <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank"to="https://github.com/Abbalolo/my-react-quiz.git">
-                    Code
-                  </Link>
-                </button>
-                <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank" to="https://lohdev-quiz.netlify.app">Live Demo</Link>
-                </button>
-              </div>
-            </div>
-
-            <div className="mt-2 flex  flex-wrap gap-2 ">
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                Html
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                Css
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                Javascript
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                React
-              </div>
-             
-            </div>
-          </div>
-
-          <div className="flex flex-col">
-            <h3 className="font-bold "><Link className="hover:underline hover:text-blue-900 flex items-center gap-3 " target="_blank" to="https://lohdev-quiz.netlify.app" >quiz App <AiOutlineArrowRight/></Link></h3>
-            <p className="text-sm dark:text-gray-400 text-gray-600 pt-2 pr-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-              saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit 
-            </p>
-          </div>
-        </div> 
-
-
-        {/* <div className="hover:shadow-md  w-full h-full flex gap-5 py-2">
-          <div className="overflow-hidden">
-            <div className="group relative">
-              <img className="" src={blog} alt="pic" />
-              <div className="absolute h-full w-full backdrop-blur-sm flex items-center justify-center -bottom-2 group-hover:bottom-0 opacity-0 group-hover:opacity-100 duration-300 gap-5">
-                <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank"to="https://github.com/Abbalolo/Blog-App.git">
-                    Code
-                  </Link>
-                </button>
-                <button className="bg-blue-500 text-center text-sm text-white px-2 py-1 shadow-md hover:scale-105 duration-300">
-                  <Link target="_blank" to="https://loloblog.netlify.app">Live Demo</Link>
-                </button>
-              </div>
-            </div>
-
-            <div className="mt-2 flex  flex-wrap gap-2 ">
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                Html
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                Css
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                Javascript
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                React
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm">
-                Tailwind
-              </div>
-              <div className="text-sm text-blue-500 hover:bg-blue-500 hover:text-white border-blue-500 inline-block border p-1 rounded-sm duration-300 cursor-pointer">
-                Bootsrap
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col">
-            <h3 className="font-bold "><Link className="hover:underline hover:text-blue-900 flex items-center gap-3 " target="_blank" to="https://loloblog.netlify.app" >Blog App <AiOutlineArrowRight/></Link></h3>
-            <p className="text-sm dark:text-gray-400 text-gray-600 pt-2 pr-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-              saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit 
-            </p>
-          </div>
-        </div> */}
-
-
-      </div> 
+</div>
+        
+ 
+ 
     </section>
   );
 }

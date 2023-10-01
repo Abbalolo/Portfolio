@@ -27,18 +27,16 @@ function Header() {
   };
 
   const closeNav = () => {
-    setOpenNav(false); // Set openNav to false to close the navigation
+    setOpenNav(false);
   };
 
   return (
-    <div className=" dark:text-white mx-5 lg:mx-16 md:mx-10">
+    <div className=" bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] px-3 lg:px-16 md:px-8">
       {openNav && <Blur handleNav={handleNav} />}
-      <nav className="py-7 flex justify-between items-center">
+      <nav className="py-5 flex justify-between items-center">
         <div className="flex items-center">
           <img src={logo} className="w-10 h-30 " alt="Ibrahim" />
-          <h1 className={`font-semibold capitalize font-serif text-gray-500`}>
-            Ibrahim Lawal Abba
-          </h1>
+
         </div>
         <ul className="flex items-center">
           <li
@@ -46,13 +44,13 @@ function Header() {
               onClick={handleToggleDarkMode}
             >
               {theme === "light" ? (
-                <BsFillMoonStarsFill />
-              ) : (
                 <BsFillBrightnessHighFill />
+                ) : (
+                <BsFillMoonStarsFill />
               )}
             
           </li>
-          <li className="bg-gradient-to-r duration-300 hidden md:flex hover:text-red-500 hover:scale-110 shadow-md from-blue-700 to-teal-600 py-1 px-2 ml-5 rounded-md">
+          <li className="bg-gradient-to-r duration-300 hidden md:flex hover:text-red-500 hover:scale-110 shadow-md from-blue-500 to-teal-600 py-1 px-2 ml-5 rounded-md">
             <Link to="#" className="hover:text-red-500 text-white">
               Resume
             </Link>

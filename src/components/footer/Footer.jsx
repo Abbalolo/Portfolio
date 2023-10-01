@@ -3,13 +3,10 @@ import { useState } from "react"
 
 function Footer() {
   
-  const date = new Date()
-  const fullYear = date.getFullYear()
- 
-  const [year] = useState(fullYear)
+
   return (
-    <section className="bg-black/50 mt-10 w-full h-full p-5 text-center">
-     &copy; {year}
+    <section className="bg-[#272c30] md:hidden dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] w-full  p-5 text-center fixed bottom-0 shadow-2xl">
+     123457788
     </section>
   )
 }
