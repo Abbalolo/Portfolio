@@ -18,7 +18,7 @@ function Hero() {
         AOS.init();
       }, []);
   return (
-    <section className="h-[90vh] mx-5 flex items-center justify-center md:mx-10 lg:mx-16">
+    <section className="h-[80vh] mx-5 flex items-center justify-center md:mx-10 lg:mx-16">
     <div className="w-full flex justify-center">
       {/* lg:flex  lg:items lg:h-full lg:w-full lg:flex-row-reverse */}
       {/* <div
