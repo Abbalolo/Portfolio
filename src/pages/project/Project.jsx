@@ -71,14 +71,14 @@ function Project() {
       <h2 className="text-xl md:text-3xl text-blue-500 font-bold mb-5">
         PortFolio.
       </h2>
-      <div  className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
       {portfolioCards.map((card) => (
-        <div key={card.id} className="rounded-xl">
+        <div key={card.id} className="rounded-md">
          
-        <div className="relative rounded-2xl overflow-hidden h-full">
+        <div className="relative rounded-md overflow-hidden h-full">
           <img className="" src={card.image} alt="pic" />
-          <div className="absolute top-0 left-0 h-full w-full flex items-end justify-end duration-300 gap-5 backdrop-brightness-[55%]">
+          <div className=" absolute top-0 left-0 h-full w-full flex items-end justify-end duration-300 gap-5 backdrop-brightness-[65%]">
 
           <div className="flex flex-col w-full p-3">
              <h1 className="text-xl text-white font-extrabold">{card.name}</h1>

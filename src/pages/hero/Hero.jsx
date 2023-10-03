@@ -1,3 +1,4 @@
+import { BsArrowDown } from "react-icons/bs"; 
 import React from 'react'
 
 
@@ -18,8 +19,8 @@ function Hero() {
         AOS.init();
       }, []);
   return (
-    <section className="h-[80vh] mx-5 flex items-center justify-center md:mx-10 lg:mx-16">
-    <div className="w-full flex justify-center">
+    <section className=" h-[87vh] mx-5 flex items-center flex-col justify-center md:mx-10 lg:mx-16">
+    <div className="w-full flex  justify-center">
       {/* lg:flex  lg:items lg:h-full lg:w-full lg:flex-row-reverse */}
       {/* <div
         data-aos="fade-in"
@@ -51,7 +52,7 @@ function Hero() {
         </h2>
         <p
           data-aos="zoom-left"
-          className="lg:text-start md:my-5 text-[#f9f7f6] dark:text-[#545454] leading-8"
+          className="lg:text-start my-5 text-[#f9f7f6] dark:text-[#545454] leading-8"
         >
            Transformative skills that elevate your digital presence to new
           heights. <br /><span className="text-[#f9f7f6] dark:text-[#545454] font-bold">Ibrahim Lawal Abba</span> is a highly skilled front-end developer with a Computer Science diploma and extensive freelancing experience. They excel at translating design concepts into visually appealing, user-friendly websites, consistently delivering projects on time and exceeding client expectations.
@@ -70,7 +71,12 @@ function Hero() {
       </div>
     </div>
 
-    
+    {/* <div className='w-full flex justify-end items-end translate-y-10'>
+      <Link to="#About" className="flex items-center gap-3 animate-pulse">
+      <p className="text-xl text-gray-400 cursor-pointer ">Next to About</p>
+      <BsArrowDown className="text-2xl text-gray-400 cursor-pointer"/>
+      </Link>
+    </div> */}
   </section>
   )
 }

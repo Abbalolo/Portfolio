@@ -26,10 +26,10 @@ function Footer() {
 
   return (
     <>
-    <footer className={ scrolling ?`bg-[#272c30] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] w-full p-3 text-center fixed bottom-0 shadow-2xl md:hidden` : `hidden`}>
+    <footer className={ scrolling ?`backdrop-blur-md text-[#f9f7f6] dark:text-[#545454] w-full p-3 text-center fixed bottom-0 shadow-2xl lg:hidden` : `hidden`}>
      <div
 
-      className="flex text-2xl md:hidden justify-around gap-4  text-gray-600"
+      className="flex text-2xl  justify-around gap-4  text-gray-600"
     >
       <Link target="_blank" to="https://web.facebook.com/lolo.fundz/">
         <AiFillFacebook className="hover:text-blue-700 duration-300" />
