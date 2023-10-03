@@ -1,7 +1,7 @@
 import { CgDarkMode } from "react-icons/cg"; 
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Blur from "../blur/Blur";
 import logo from "../../assets/logo.png";
 
@@ -9,6 +9,23 @@ function Header() {
   const [openNav, setOpenNav] = useState(false);
   const [hideNav, setHideNav] = useState(false);
   const [theme, setTheme] = useState("light");
+
+  // const [scrolling, setScrolling] = useState(false);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 100) {
+  //       setScrolling(true);
+  //     } else {
+  //       setScrolling(false);
+  //     }
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   const handleToggleDarkMode = () => {
     const html = document.querySelector("html");
@@ -31,7 +48,7 @@ function Header() {
   };
 
   return (
-    <header className=" bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] py-6 px-3 lg:px-16 md:px-8 flex items-center justify-between">
+    <header className={ `bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] py-5 px-3 lg:px-16 md:px-8 flex items-center justify-between `}>
       {openNav && <Blur handleNav={handleNav} />}
       <div className="flex items-center">
           <img src={logo} className="w-10 h-30 " alt="Ibrahim" />
@@ -49,9 +66,9 @@ function Header() {
               onClick={handleToggleDarkMode}
             >
               {theme === "light" ? (
-                <CgDarkMode  />
+                <CgDarkMode  onClick={closeNav}/>
                 ) : (
-                  <CgDarkMode  />
+                  <CgDarkMode  onClick={closeNav}/>
               )}
             
           </button>

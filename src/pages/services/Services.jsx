@@ -11,7 +11,7 @@ function Services() {
   }, [])
 
   return (
-    <section className="text-center mx-5 text-[#f9f7f6] dark:text-[#545454] lg:mx-16 md:mx-10  ">
+    <section className="text-center px-5 bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] lg:px-16 md:px-10  ">
       <div className="">
         <h2 data-aos="fade-left" className="py-1 font-extrabold text-2xl text-center md:text-4xl md:text-start text-blue-500 dark:text-blue-500 ">
           What I Do
@@ -20,7 +20,7 @@ function Services() {
         My expertise lies in crafting visually stunning interfaces that seamlessly blend aesthetic appeal with optimal functionality. I have mastered a wide range of cutting-edge technologies and frameworks, enabling me to deliver highly performant and responsive websites across multiple devices and platforms.
 
         </p>
-        <div className="mt-10 md:grid md:grid-cols-2 place-items-center mb-20">
+        <div className="mt-10 md:grid md:grid-cols-2 place-items-center pb-20">
           {cards.map((icon, index) => {
             return (
               <div

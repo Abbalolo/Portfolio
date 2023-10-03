@@ -51,8 +51,8 @@ function About() {
 
 
   return (
-    <section  className="lg:mx-16 mx-5 md:mb-10 md:mx-10 h-full">
-       <h2 data-aos="fade-left" className="text-3xl mt-5  md:text-4xl font-bold text-blue-500">About</h2>
+    <section  className="lg:px-16 px-5 md:pb-10 md:px-10 h-full bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454]">
+       <h2 data-aos="fade-left" className="text-3xl pt-5  md:text-4xl font-bold text-blue-500">About</h2>
         <div className="mt-5">
           <h3 className="text-blue-500">Skills</h3>
           <div className="mt-5 flex gap-3 ">
@@ -66,7 +66,7 @@ function About() {
        <article>
         {contents.map((content) => (
      <ul key={content.id} className="list-none relative before:content-[''] before:bg-gray-400 before:inline-block before:absolute before:left-0 before:w-[1px] before:top-[4px] before:h-full before:z-50">
-    <li className="mr-5 before:content-['']  before:bg-[#212529] dark:before:bg-[#f9f7f6] before:inline-block before:absolute before:left-[-7px] before:w-[15px] before:h-[15px] before:z-50 before:mt-[3px] before:border before:border-gray-400 before:rounded-full mt-[3rem] mb-[3rem] pl-[20px]">
+    <li className="mr-5 before:content-['']  before:bg-[#212529] dark:before:bg-[#f9f7f6] before:inline-block before:absolute before:left-[-7px] before:w-[15px] before:h-[15px] before:z-50 before:mt-[3px] before:border before:border-gray-400 before:rounded-full mt-[3rem] pb-[3rem] pl-[20px]">
       <h2 className="text-xl flex items-center font-extrabold">{content.name}{content.icon}</h2>
       <p className="text-[#f9f7f6] dark:text-[#545454]">{content.description}</p>
       <h4 className="mt-3 font-extrabold">{content.school}</h4>

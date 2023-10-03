@@ -49,7 +49,7 @@ function Contact() {
         
 
   return (
-    <section className="overflow-x-hidden text-center bg-[#212529] dark:bg-[#f9f7f6] mx-5 mt-10 lg:mx-16 md:mx-10">
+    <section className="overflow-x-hidden text-center bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] px-5 pt-10 lg:px-16 md:px-10">
       <ToastContainer />
       <h2
         data-aos="fade-left"

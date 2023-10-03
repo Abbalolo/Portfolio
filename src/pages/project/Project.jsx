@@ -67,7 +67,7 @@ function Project() {
 ]
 
   return (
-    <section className="mx-5 lg:mx-16 md:mx-10 relative">
+    <section className="px-5 lg:px-16 md:px-10 relative bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454]">
       <h2 className="text-xl md:text-3xl text-blue-500 font-bold mb-5">
         PortFolio.
       </h2>
