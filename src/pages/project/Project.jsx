@@ -24,7 +24,7 @@ function Project() {
 
           <div className="flex flex-col w-full p-3">
              <h1 className="text-xl text-white font-extrabold">{card.name}</h1>
-             <p className="text-gray-100">Lorem ipsum dolor sit amet consectetur . </p>
+             <p className="text-gray-100">{card.short}</p>
 
             <div className="flex flex-wrap gap-2 py-1">
               {card.language.map((language, index) => (

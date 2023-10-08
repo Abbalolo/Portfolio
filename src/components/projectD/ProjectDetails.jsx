@@ -12,7 +12,7 @@ function ProjectDetails() {
     // console.log(project);
 
     return (
-        <section className='relative px-5 lg:px-16 md:px-10 pb-20 bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454]'>
+        <section className='relative px-5 lg:px-16 md:px-10 pb-40 bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454]'>
             <h1 className='font-extrabold text-xl pt-2 pb-2'>{name}</h1>
             <p className=" pb-3 text-[#f9f7f6] dark:text-[#545454]">{short}</p>
             <img className="rounded-lg" src={image} alt="pic" />
@@ -41,7 +41,7 @@ function ProjectDetails() {
                 <p className="text-blue-600 hover:underline cursor-pointer">{github}</p>
             </div>
 
-            <Link className="mt-4 bg-blue-900 p-3 w-full absolute bottom-0 left-0 flex items-center justify-center gap-2 dark:text-[#f9f7f6]" to={host}>
+            <Link className="mt-4 bg-blue-900 p-3 w-full absolute bottom-12 left-0 flex items-center justify-center gap-2 dark:text-[#f9f7f6]" to={host}>
                 Open Project <BiLinkExternal className="text-[18px]" />
             </Link>
         </section>

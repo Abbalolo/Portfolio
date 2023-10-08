@@ -27,8 +27,8 @@ export const portfolioCards = [
      host: "https://mayor-portfolio.netlify.app/",
      image: portfolio,
      language: ["Html", "Css", "Javascript", ] ,
-     description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit", 
-     short: "a lava landing page "
+     description: "The portfolio serves as a creative canvas to share the developer's journey and projects, inviting others to explore and connect.", 
+     short: "Side Freelance portfolio project"
     },
     {
      id: 3,
@@ -36,8 +36,8 @@ export const portfolioCards = [
      github: "https://github.com/Abbalolo/Blog-App.git",
      image: blog,
      language: ["React","Html", "Css", "Javascript", "Json" ] ,
-     description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit",
-     short: "a lava landing page "
+     description: "blog app powered by JavaScript and a JSON server. With this dynamic combination, we've crafted a seamless platform for bloggers and readers alike. JavaScript brings interactivity and responsiveness to the user interface, while the JSON server ensures efficient data management and retrieval. Bloggers can easily create, edit, and publish content,",
+     short: "A blog app that allow user to Get, Add and Deleate Blogs"
     },
     {
      id: 4,
@@ -46,18 +46,18 @@ export const portfolioCards = [
      host: "https://mayor-portfolio.netlify.app/",
      image: ecommerce,
      language: ["React", "Html", "Scss","Css", "Javascript", "Redux", "FireBase" ] ,
-     description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit",
-     short: "a lava landing page "
+     description: "This is a full-fledged e-commerce web application built with React and Redux. The app allows users to browse through various products, add items to their cart, and proceed to checkout. It incorporates features like user authentication, product filtering, and a responsive user interface.",
+     short: "An ecommerce web app"
     },
     {
      id: 5,
-     name: "Seo Digital Agency",
+     name: "Tale",
      github: "https://github.com/Abbalolo/seo-digital-agency.git",
      host: "https://seo-digital-agency.netlify.app",
      image: seo,
      language: ["Html","Css", "Javascript" ] ,
-     description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit",
-     short: "a lava landing page "
+     description: "SEO digital agency specializing in optimizing online presence. A website which emphasize  team of experts, data-driven approach, and tailored solutions to help businesses of all sizes succeed online by improving search engine visibility and driving organic traffic.",
+     short: "A Seo Digital Agency web app"
     },
     {
      id: 6,
@@ -66,8 +66,8 @@ export const portfolioCards = [
      host: "https://dictionaryspeech.netlify.app",
      image: dictionary,
      language: ["React", "Html","Css", "Javascript", "Api" ] ,
-     description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit",
-     short: "a lava landing page "
+     description: "A simple dictionary app that allow user to search for meaningfull or existing word",
+     short: "A dictionary web app "
     },
     {
      id: 7,
@@ -76,8 +76,8 @@ export const portfolioCards = [
      host: "https://lohdev-todo.netlify.app",
      image: todo,
      language: ["React", "Javascript", "Html","Css" ] ,
-     description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit",
-     short: "a lava landing page "
+     description: "Experience productivity at your fingertips with our intuitive to-do app. Organize tasks effortlessly, set priorities, and track your progress, all in one place. Whether you're managing personal projects or work-related assignments, our app simplifies task management, helping you stay focused and accomplish more. Make the most of your time with our user-friendly to-do app",
+     short: "A todo app that enable user to add task of the day in order to track their progress"
     },
     {
      id: 8,
@@ -86,8 +86,8 @@ export const portfolioCards = [
      host: "https://lohdev-quiz.netlify.app",
      image: quiz,
      language: ["React", "Javascript", "Html","Css" ] ,
-     description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit",
-     short: "a lava landing page "
+     description: "Welcome to our engaging quiz web app – your gateway to knowledge and fun! Whether you're looking to test your expertise or simply have a good time, our platform offers a wide range of quizzes on diverse topics. Challenge yourself, compete with friends, and expand your horizons while enjoying an interactive and entertaining quiz experience. Dive into a world of questions and answers, where learning and entertainment come together seamlessly.",
+     short: "A quiz app that ask user questons and aswers"
     },
     {
      id: 9,
@@ -96,8 +96,8 @@ export const portfolioCards = [
      host: "https://funiture-landingpage.netlify.app",
      image: funiture,
      language: ["Javascript", "Html","Css" ] ,
-     description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit",
-     short: "a lava landing page "
+     description: "Discover the art of interior design with our stunning furniture landing page. Immerse yourself in a world of exquisite craftsmanship and elegant aesthetics. Our carefully curated collection of furniture pieces offers style, comfort, and functionality for every space",
+     short: "A Funiture landing page"
     },
     // {
     //  id: 10,
