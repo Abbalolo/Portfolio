@@ -11,7 +11,7 @@ function Services() {
   }, [])
 
   return (
-    <section className="text-center px-5 bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] lg:px-16 md:px-10  ">
+    <section className="text-center px-5 pb-20 bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] lg:px-16 md:px-10  ">
       <div className="">
         <h2 data-aos="fade-left" className="py-1 font-extrabold text-2xl text-center md:text-4xl md:text-start text-blue-500 dark:text-blue-500 ">
           What I Do

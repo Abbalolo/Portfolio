@@ -10,7 +10,7 @@ function Footer() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY < 100) {
         setScrolling(true);
       } else {
         setScrolling(false);
@@ -26,7 +26,7 @@ function Footer() {
 
   return (
     <>
-    <footer className={ scrolling ?`backdrop-blur-md text-[#f9f7f6] dark:text-[#545454] w-full p-3 text-center fixed bottom-0 shadow-2xl lg:hidden` : `hidden`}>
+    <footer className={ scrolling ?`backdrop-blur-md text-[#f9f7f6] dark:text-[#545454] w-full p-3 text-center fixed bottom-0 shadow-2xl lg:hidden z-20` : `hidden`}>
      <div
 
       className="flex text-2xl  justify-around gap-4  text-gray-600"
