@@ -14,19 +14,19 @@ function ProjectDetails() {
     return (
         <section className='relative px-5 lg:px-16 md:px-10 pb-20 bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454]'>
             <h1 className='font-extrabold text-xl pt-2 pb-2'>{name}</h1>
-            <p className="text-gray-100 pb-3">{short}</p>
+            <p className=" pb-3 text-[#f9f7f6] dark:text-[#545454]">{short}</p>
             <img className="rounded-lg" src={image} alt="pic" />
 
             <div className='mt-4'>
                 <h2 className='font-semibold text-xl'>About</h2>
-                <p className="text-gray-100">{description}</p>
+                <p className="text-[#f9f7f6] dark:text-[#545454]">{description}</p>
             </div>
 
             <div className='mt-2'>
                 <h2 className='font-semibold text-xl pt-2 pb-1'>Technologies</h2>
                 <div className="flex flex-wrap gap-2 py-1">
                     {language.map((lang, index) => (
-                        <span key={index} className="text-[16px] md:text-md text-white hover:bg-blue-500 hover:text-white bg-slate-950 dark:bg-transparent dark:border dark:border-gray-400 rounded-md p-1 text-center duration-300 cursor-pointer">{lang}</span>
+                        <span key={index} className="text-[16px] md:text-md text-[#f9f7f6] dark:text-[#545454] hover:bg-blue-500 hover:text-white bg-slate-950 dark:bg-transparent dark:border dark:border-gray-400 rounded-md p-1 text-center duration-300 cursor-pointer">{lang}</span>
                     ))}
                 </div>
             </div>
