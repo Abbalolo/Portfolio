@@ -41,7 +41,7 @@ function ProjectDetails() {
                 <p className="text-blue-600 hover:underline cursor-pointer">{github}</p>
             </div>
 
-            <Link className="mt-4 bg-blue-900 p-3 w-full absolute bottom-0 left-0 flex items-center justify-center gap-2" to={host}>
+            <Link className="mt-4 bg-blue-900 p-3 w-full absolute bottom-0 left-0 flex items-center justify-center gap-2 dark:text-[#f9f7f6]" to={host}>
                 Open Project <BiLinkExternal className="text-[18px]" />
             </Link>
         </section>
