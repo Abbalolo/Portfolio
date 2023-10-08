@@ -26,7 +26,7 @@ function ProjectDetails() {
                 <h2 className='font-semibold text-xl pt-2 pb-1'>Technologies</h2>
                 <div className="flex flex-wrap gap-2 py-1">
                     {language.map((lang, index) => (
-                        <span key={index} className="text-[16px] md:text-md text-white hover:bg-blue-500 hover:text-white bg-slate-950 rounded-md p-1 text-center duration-300 cursor-pointer">{lang}</span>
+                        <span key={index} className="text-[16px] md:text-md text-white hover:bg-blue-500 hover:text-white bg-slate-950 dark:bg-transparent dark:border dark:border-gray-400 rounded-md p-1 text-center duration-300 cursor-pointer">{lang}</span>
                     ))}
                 </div>
             </div>
