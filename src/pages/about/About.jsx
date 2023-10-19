@@ -51,31 +51,52 @@ function About() {
 
 
   return (
-    <section  className="lg:px-16 px-5 md:pb-10 pb-20 md:px-10 h-full mb-10 bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] overflow-y-hidden">
-       <h2 data-aos="fade-left" className="text-3xl pt-5  md:text-4xl font-bold text-blue-500">About</h2>
-        <div className="mt-5">
-          <h3 className="text-blue-500">Skills</h3>
-          <div className="mt-5 flex gap-3 ">
-          <span className="text-[#f9f7f6] p-1 dark:text-[#545454] bg-slate-950 dark:bg-[#f9f7f6] dark:border  rounded-sm">Html</span>
-          <span className="text-[#f9f7f6] p-1 dark:text-[#545454] bg-slate-950 dark:bg-[#f9f7f6] dark:border  rounded-sm">Css</span>
-          <span className="text-[#f9f7f6] p-1 dark:text-[#545454] bg-slate-950 dark:bg-[#f9f7f6] dark:border  rounded-sm">Javascript</span>
-          <span className="text-[#f9f7f6] p-1 dark:text-[#545454] bg-slate-950 dark:bg-[#f9f7f6] dark:border  rounded-sm">Tailwind</span>
-          <span className="text-[#f9f7f6] p-1 dark:text-[#545454] bg-slate-950 dark:bg-neutral-50 dark:border rounded-sm">React</span>
+    <section className="lg:px-16 px-5 md:pb-10 pb-20 md:px-10 h-full mb-10 bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] overflow-y-hidden">
+      <h2
+        data-aos="fade-left"
+        className="text-3xl pt-5  md:text-4xl font-bold text-blue-500"
+      >
+        About
+      </h2>
+      <div className="mt-10">
+        <h3 className="text-blue-500 text-2xl font-extrabold">Skills</h3>
+        <div className="mt-3 flex gap-3 ">
+          <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454] bg-slate-950 dark:bg-[#f9f7f6] dark:border hover:border hover:border-slate-500  rounded-sm">
+            Html
+          </span>
+          <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454] bg-slate-950 dark:bg-[#f9f7f6] dark:border hover:border hover:border-slate-500  rounded-sm">
+            Css
+          </span>
+          <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454] bg-slate-950 dark:bg-[#f9f7f6] dark:border hover:border hover:border-slate-500  rounded-sm">
+            Javascript
+          </span>
+          <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454] bg-slate-950 dark:bg-[#f9f7f6] dark:border hover:border hover:border-slate-500  rounded-sm">
+            Tailwind
+          </span>
+          <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454] bg-slate-950 dark:bg-neutral-50 dark:border hover:border hover:border-slate-500 rounded-sm">
+            React
+          </span>
         </div>
-        </div>
-       <article className="">
+      </div>
+      <article className="">
         {contents.map((content) => (
-     <ul key={content.id} className="list-none relative before:content-[''] before:bg-gray-400 before:inline-block before:absolute before:left-0 before:w-[1px] before:top-[4px] before:h-screen before:z-50">
-    <li className="mr-5 before:content-['']  before:bg-[#212529] dark:before:bg-[#f9f7f6] before:inline-block before:absolute before:left-[-7px] before:w-[15px] before:h-[15px] before:z-50 before:mt-[3px] before:border before:border-gray-400 before:rounded-full mt-[3rem] pb-[3rem] pl-[20px]">
-      <h2 className="text-xl flex items-center font-extrabold">{content.name}{content.icon}</h2>
-      <p className="text-[#f9f7f6] dark:text-[#545454]">{content.description}</p>
-      <h4 className="mt-3 font-extrabold">{content.school}</h4>
-    </li>
-   
-  </ul>
-  ))}
-</article>
-
+          <ul
+            key={content.id}
+            className="list-none relative before:content-[''] before:bg-gray-400 before:inline-block before:absolute before:left-0 before:w-[1px] before:top-[4px] before:h-screen before:z-50"
+          >
+            <li className="mr-5 before:content-['']  before:bg-[#212529] dark:before:bg-[#f9f7f6] before:inline-block before:absolute before:left-[-7px] before:w-[15px] before:h-[15px] before:z-50 before:mt-[3px] before:border before:border-gray-400 before:rounded-full mt-[3rem] pb-[3rem] pl-[20px]">
+              <h2 className="text-xl flex items-center font-extrabold">
+                {content.name}
+                {content.icon}
+              </h2>
+              <p className="text-[#f9f7f6] dark:text-[#545454]">
+                {content.description}
+              </p>
+              <h4 className="mt-3 font-extrabold">{content.school}</h4>
+            </li>
+          </ul>
+        ))}
+      </article>
     </section>
   );
 }
