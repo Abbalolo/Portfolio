@@ -1,10 +1,17 @@
+import { AiFillGithub } from "react-icons/ai"; 
+import { BiGitBranch } from "react-icons/bi"; 
+import { FaNodeJs } from "react-icons/fa"; 
+import { RiReactjsFill } from "react-icons/ri"; 
+import { SiTailwindcss } from "react-icons/si"; 
+import { SiJavascript } from "react-icons/si"; 
+import { DiCss3Full } from "react-icons/di"; 
+import { AiOutlineHtml5 } from "react-icons/ai"; 
 import { CgGames } from "react-icons/cg"; 
 import { GiSkills } from "react-icons/gi"; 
 import { GiGraduateCap } from "react-icons/gi"; 
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaCss3, FaReact } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
-import { SiTailwindcss } from "react-icons/si";
 import { BsFiletypeScss } from "react-icons/bs";
 import Abba from "./Abba.jpeg";
 import AOS from "aos"
@@ -60,22 +67,51 @@ function About() {
       </h2>
       <div className="mt-10">
         <h3 className="text-blue-500 text-2xl font-extrabold">Skills</h3>
-        <div className="mt-3 flex gap-3 ">
-          <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454] bg-slate-950 dark:bg-[#f9f7f6] dark:border hover:border hover:border-slate-500  rounded-sm">
-            Html
-          </span>
-          <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454] bg-slate-950 dark:bg-[#f9f7f6] dark:border hover:border hover:border-slate-500  rounded-sm">
-            Css
-          </span>
-          <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454] bg-slate-950 dark:bg-[#f9f7f6] dark:border hover:border hover:border-slate-500  rounded-sm">
-            Javascript
-          </span>
-          <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454] bg-slate-950 dark:bg-[#f9f7f6] dark:border hover:border hover:border-slate-500  rounded-sm">
-            Tailwind
-          </span>
-          <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454] bg-slate-950 dark:bg-neutral-50 dark:border hover:border hover:border-slate-500 rounded-sm">
-            React
-          </span>
+        <div className="mt-3 flex flex-wrap gap-3 ">
+          <div className="bg-slate-900 dark:bg-transparent  p-3 flex items-center dark:bg-[#f9f7f6] dark:border hover:border hover:border-slate-500  rounded-sm">
+            <AiOutlineHtml5 className="text-3xl" />
+            <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454]  ">
+              Html
+            </span>
+          </div>
+          <div className="bg-slate-900 dark:bg-transparent  p-3 flex  items-center dark:bg-[#f9f7f6] dark:border hover:border hover:border-slate-500  rounded-sm">
+            <DiCss3Full className="text-3xl" />
+            <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454] ">
+              Css
+            </span>
+          </div>
+
+          <div className="bg-slate-900 dark:bg-transparent  p-3 flex  items-center dark:bg-[#f9f7f6] dark:border hover:border hover:border-slate-500  rounded-sm">
+            <SiJavascript className="text-3xl" />
+            <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454] ">
+              Javascript
+            </span>
+          </div>
+
+          <div className="bg-slate-900 dark:bg-transparent  p-3 flex  items-center dark:bg-[#f9f7f6] dark:border hover:border hover:border-slate-500  rounded-sm">
+            <SiTailwindcss className="text-3xl" />
+            <span className="text-[#f9f7f6] text-center p-1 w-full dark:text-[#545454] ">
+              Tailwind
+            </span>
+          </div>
+          <div className="bg-slate-900 dark:bg-transparent  p-3 flex  items-center dark:bg-neutral-50 dark:border hover:border hover:border-slate-500 rounded-sm">
+            <RiReactjsFill className="text-3xl" />
+            <span className="text-[#f9f7f6] text-center w-full dark:text-[#545454] ">
+              React
+            </span>
+          </div>
+          <div className="bg-slate-900 dark:bg-transparent  p-3 flex  items-center dark:bg-neutral-50 dark:border hover:border hover:border-slate-500 rounded-sm">
+            <FaNodeJs className="text-3xl" />
+            <span className="text-[#f9f7f6] text-center  w-full dark:text-[#545454] ">
+              NodeJs
+            </span>
+          </div>
+          <div className="bg-slate-900 dark:bg-transparent p-2 flex  items-center dark:bg-neutral-50 dark:border hover:border hover:border-slate-500 rounded-sm">
+            <AiFillGithub className="text-3xl" />
+            <span className="text-[#f9f7f6] text-center  w-full dark:text-[#545454] ">
+              Git/Github
+            </span>
+          </div>
         </div>
       </div>
       <article className="">
