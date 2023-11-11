@@ -8,6 +8,7 @@ import quiz from "../project-image/quiz.png";
 import portfolio from "../project-image/portfolio.png";
 import funiture from "../project-image/funiture.png";
 import seo from "../project-image/seo-agency.png";
+import resume from "../project-image/resume.png";
 
 export const portfolioCards = [
   {
@@ -117,15 +118,29 @@ export const portfolioCards = [
       "Discover the art of interior design with our stunning furniture landing page. Immerse yourself in a world of exquisite craftsmanship and elegant aesthetics. Our carefully curated collection of furniture pieces offers style, comfort, and functionality for every space",
     short: "A Funiture landing page",
   },
+  {
+    id: 10,
+    name: "Resume",
+    github: "https://github.com/Abbalolo/resume-builder.git",
+    host: "https://funiture-landingpage.netlify.app",
+    image: resume,
+    language: ["Javascript", "Html", "Tailwind Css", "React"],
+    description:
+      "A resume builder  that allow user to create and  add his/her infomation ",
+
+    short: "A resume builder  ",
+  },
   // {
-  //  id: 10,
-  //  name: "Funiture",
-  //  github: "https://github.com/Abbalolo/my-react-quiz.git",
-  //  host: "https://funiture-landingpage.netlify.app",
-  //  image: funiture,
-  //  language: ["Javascript", "Html","Css" ] ,
-  //  description: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla   saepe possimus quibusdam quae unde, sequi, atque, ipsam Lorem ipsum dolor sit"
-  // short: "a lava landing page "
+  //   id: 11,
+  //   name: "Responsive Blog",
+  //   github: "https://github.com/Abbalolo/Responsive-Blog-Page.git",
+  //   host: "https://funiture-landingpage.netlify.app",
+  //   image: resume,
+  //   language: ["Javascript", "Html", "Tailwind Css", "React"],
+  //   description:
+  //     "A resume builder  that allow user to create and  add his/her infomation ",
+
+  //   short: "A resume builder  ",
   // },
 ];
   
