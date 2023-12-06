@@ -169,7 +169,7 @@ setCurrentCard(openSourceProduct);
           PortFolio.
         </h2>
 
-        <ul className="flex items-center justify-between text-[13px]  my-2">
+        <ul className="flex items-center justify-between md:text-[16] text-[13px]  my-2">
           <li
             onClick={filterAll}
             className={
