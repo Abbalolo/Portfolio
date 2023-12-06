@@ -7,20 +7,19 @@
   color-scheme: dark light ;
   scroll-behavior: smooth;
   scrollbar-width: thin;
+  /* bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] */
   
 }
 
  /* body{
   /* background-image:url("https://c4.wallpaperflare.com/wallpaper/253/962/403/black-dark-mask-plague-doctor-wallpaper-thumb.jpg");
   background-position: cover; */
- 
-  */
+
 
 .navigator li a.active{
   color:red;
 }
 
-Chrome, Edge, and Safari
 *::-webkit-scrollbar {
   width: 10px;
 }
@@ -33,5 +32,7 @@ Chrome, Edge, and Safari
   background-color: #272c30;
  
 }
-
-
+/* 
+.active{
+background-color: rgb(74, 90, 238);
+} */
