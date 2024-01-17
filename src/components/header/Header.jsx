@@ -68,7 +68,7 @@ function Header() {
               {theme === "light" ? (
                 <CgDarkMode  onClick={closeNav}/>
                 ) : (
-                  <CgDarkMode  onClick={closeNav}/>
+                <CgDarkMode  onClick={closeNav}/>
               )}
             
           </button>

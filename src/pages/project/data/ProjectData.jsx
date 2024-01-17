@@ -12,6 +12,8 @@ import resume from "../project-image/resume.png";
 import space from "../project-image/space.png";
 import ticTacToe from "../project-image/tic-tac-toe.png";
 import hackathon from "../project-image/hackathon.png";
+import tailor from "../project-image/tailoring.png";
+import technophilic from "../project-image/technophilic.png";
 
 export const portfolioCards = [
   {
@@ -178,6 +180,29 @@ export const portfolioCards = [
       "A Shopify user friendly page for creating Shopify account and also a accesible website that allow Screen Readers, Keyboard user and Mouse users ",
     category: "hackathon project",
     short: "A accessible Shopify page",
+  },
+  {
+    id: 14,
+    name: "Tailoring Measurement App",
+    github: "https://github.com/Abbalolo/tailor-measurement-app.git",
+    host: "https://tailoringmeasurement.netlify.app",
+    image: tailor,
+    language: ["React", "Typescript", "Tailwind"],
+    description:
+      "A tailoring measurement app that helps fashhion designers to store or save custoomer measurement",
+    category: "personal project",
+    short: "A Tailoring Measurement App",
+  },
+  {
+    id: 15,
+    name: "Technophilic",
+    github: "https://github.com/Abbalolo/my-painting-website.git",
+    host: "https://technophilic.netlify.app",
+    image: technophilic,
+    language: ["React", "Typescript", "Tailwind"],
+    description: "A painting service and product sales  ",
+    category: "freelance project",
+    short: "A Painting Service App",
   },
 ];
   
