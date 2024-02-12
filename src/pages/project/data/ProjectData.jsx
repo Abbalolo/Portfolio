@@ -150,7 +150,7 @@ export const portfolioCards = [
     id: 11,
     name: "Space World",
     github: "https://github.com/Abbalolo/Responsive-Blog-Page.git",
-    host: "https://funiture-landingpage.netlify.app",
+    host: "https://myuniverse-x.netlify.app",
     image: space,
     language: ["Javascript", "Html", "Css"],
     description:
