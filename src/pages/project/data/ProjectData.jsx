@@ -149,7 +149,7 @@ export const portfolioCards = [
   {
     id: 11,
     name: "Space World",
-    github: "https://github.com/Abbalolo/Responsive-Blog-Page.git",
+    github: "https://github.com/Abbalolo/My-Space.git",
     host: "https://myuniverse-x.netlify.app",
     image: space,
     language: ["Javascript", "Html", "Css"],
@@ -161,8 +161,8 @@ export const portfolioCards = [
   {
     id: 12,
     name: "Tic Tac Toe",
-    github: "https://github.com/Abbalolo/Responsive-Blog-Page.git",
-    host: "https://funiture-landingpage.netlify.app",
+    github: "https://github.com/Abbalolo/tic-tac-toe.git",
+    host: "https://https://loh-tic-tac-toe-game.netlify.app",
     image: ticTacToe,
     language: ["Javascript", "Html", "Css"],
     description: "Tic Tac Toe game with ai",
@@ -172,8 +172,8 @@ export const portfolioCards = [
   {
     id: 13,
     name: "Shopify",
-    github: "https://github.com/Abbalolo/Responsive-Blog-Page.git",
-    host: "https://funiture-landingpage.netlify.app",
+    github: "https://github.com/Abbalolo/hackathon.git",
+    host: "https://loh-shopify-hackathon.netlify.app",
     image: hackathon,
     language: ["Javascript", "Html", "Css"],
     description:
