@@ -100,8 +100,8 @@ function Header() {
 
       <div className="flex items-center gap-5">
 
-      <button className="bg-gradient-to-r duration-300 hidden md:flex hover:text-red-500 hover:scale-110 shadow-md from-blue-500 to-teal-600 py-1 px-2 ml-5 rounded-md">
-            <Link to="#" className="hover:text-red-500 text-white">
+      <button  className="bg-gradient-to-r duration-300 hidden md:flex hover:text-red-500 hover:scale-110 shadow-md from-blue-500 to-teal-600 py-1 px-2 ml-5 rounded-md">
+            <Link  to="abbcv.pdf" className="hover:text-red-500 text-white">
               Resume
             </Link>
           </button>

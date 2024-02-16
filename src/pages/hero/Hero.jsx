@@ -1,13 +1,8 @@
-import { BsArrowDown } from "react-icons/bs"; 
+
 import React from 'react'
 
 
-// import {
-//     AiFillTwitterCircle,
-//     AiFillLinkedin,
-//     AiFillFacebook,
-//   } from "react-icons/ai";
-  import clear from "../../assets/clear.png";
+
   import { Link } from "react-router-dom";
   import Typed from "react-typed";
   import AOS from "aos";
@@ -20,6 +15,7 @@ function Hero() {
       }, []);
   return (
     <section className=" h-[87vh] mx-5 flex items-center flex-col justify-center md:mx-10 lg:mx-16">
+     
       <div className="w-full flex  justify-center">
         {/* lg:flex  lg:items lg:h-full lg:w-full lg:flex-row-reverse */}
         {/* <div
