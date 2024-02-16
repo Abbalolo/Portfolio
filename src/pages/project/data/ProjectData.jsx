@@ -154,7 +154,7 @@ export const portfolioCards = [
     image: space,
     language: ["Javascript", "Html", "Css"],
     description:
-      "A space world landing page that shows different types of planets ",
+      "A space world landing page that shows different types of planets view",
     category: "perosnal project",
     short: "A space world landing page ",
   },
