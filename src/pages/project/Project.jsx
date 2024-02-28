@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import {portfolioCards} from "./data/ProjectData"
 import { useEffect, useReducer, useState } from "react";
-
+  import AOS from "aos";
+  import "aos/dist/aos.css";
 
 function Project() {
 const [currentCard, setCurrentCard] = useState(portfolioCards);
@@ -33,6 +34,8 @@ const [totalCard, setTotalCard] = useState("")
     const landingProduct = portfolioCards.filter(
       (card) => card.category === "landing page"
     );
+    
+    setTotalCard(landingProduct.length)
     setAll(false);
     setLanding(true);
     setFreelance(false);
@@ -45,6 +48,7 @@ const [totalCard, setTotalCard] = useState("")
     const freelanceProduct = portfolioCards.filter(
       (card) => card.category === "freelance project"
     );
+     setTotalCard(freelanceProduct.length);
     setAll(false);
     setLanding(false);
     setFreelance(true);
@@ -55,9 +59,9 @@ const [totalCard, setTotalCard] = useState("")
   }
   const filterOpenSource = () => {
 const openSourceProduct = portfolioCards.filter(
-  (card) => card.category === "freelance project"
+  (card) => card.category === "openSource project"
 );
-
+setTotalCard(openSourceProduct.length);
 setAll(false);
 setLanding(false);
 setFreelance(false);
@@ -69,7 +73,9 @@ setCurrentCard(openSourceProduct);
   const filterHackathon = () => {
  const hackathonProduct = portfolioCards.filter(
    (card) => card.category === "hackathon project"
- );
+    );
+    
+    setTotalCard(hackathonProduct.length);
 
  setAll(false);
  setLanding(false);
@@ -162,6 +168,10 @@ setCurrentCard(openSourceProduct);
   
 }, [])
 
+      useEffect(() => {
+        AOS.init();
+      }, []);
+
   return (
     <>
       <section className="px-5 lg:px-16 md:px-10 pb-20  relative bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454]">
@@ -169,7 +179,10 @@ setCurrentCard(openSourceProduct);
           PortFolio.
         </h2>
 
-        <ul className="flex items-center justify-between md:text-[16] text-[13px]  my-2">
+        <ul
+          data-aos="fade-in"
+          className="flex items-center justify-between md:text-[16] text-[13px]  my-2"
+        >
           <li
             onClick={filterAll}
             className={
@@ -222,28 +235,43 @@ setCurrentCard(openSourceProduct);
           </li>
         </ul>
 
-        <div className="w-full h-1 bg-slate-400 mb-5 rounded-lg overflow-hidden"></div>
-        <div className="font-bold my-3">
+        <div
+          data-aos="fade-in"
+          className="w-full h-1 bg-slate-400 mb-5 rounded-lg overflow-hidden"
+        ></div>
+        <div data-aos="fade-left" className="font-bold my-3">
           Total - <span className=" text-blue-500 ">{totalCard}</span>
         </div>
 
         {currentCard.length <= 3 ? (
-          <div className=" h-screen">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div data-aos="fade-left" className=" h-screen">
+            <div
+              data-aos="fade-right"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+            >
               {currentCard.map((card) => (
-                <div key={card.id} className="rounded-md">
+                <div data-aos="fade-right" key={card.id} className="rounded-md">
                   <Link to={`/project/${card.id}`}>
-                    <div className="relative rounded-md overflow-hidden h-full">
+                    <div
+                      data-aos="fade-in"
+                      className="relative rounded-md overflow-hidden h-full"
+                    >
                       <img className="" src={card.image} alt="pic" />
 
-                      <div className=" absolute top-0 left-0 h-full w-full flex items-end justify-end duration-300 gap-5 backdrop-brightness-[65%]">
+                      <div
+                        data-aos="fade-in"
+                        className=" absolute top-0 left-0 h-full w-full flex items-end justify-end duration-300 gap-5 backdrop-brightness-[65%]"
+                      >
                         <div className="flex flex-col w-full p-3">
                           <h1 className="text-xl text-white font-extrabold">
                             {card.name}
                           </h1>
                           <p className="text-gray-100">{card.short}</p>
 
-                          <div className="flex flex-wrap gap-2 py-1">
+                          <div
+                            data-aos="fade-in"
+                            className="flex flex-wrap gap-2 py-1"
+                          >
                             {card.language.map((language, index) => (
                               <span
                                 key={index}

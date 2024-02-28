@@ -123,7 +123,7 @@ export const portfolioCards = [
   {
     id: 9,
     name: "Funiture",
-    github: "https://github.com/Abbalolo/my-react-quiz.git",
+    github: "https://github.com/Abbalolo/Landing-Page.git",
     host: "https://funiture-landingpage.netlify.app",
     image: funiture,
     language: ["Javascript", "Html", "Css"],
@@ -136,7 +136,7 @@ export const portfolioCards = [
     id: 10,
     name: "Resume",
     github: "https://github.com/Abbalolo/resume-builder.git",
-    host: "https://funiture-landingpage.netlify.app",
+    host: "https://my-resume-builder-loh.netlify.app",
     image: resume,
     language: ["Javascript", "Html", "Tailwind Css", "React"],
     description:
