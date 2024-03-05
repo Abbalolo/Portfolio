@@ -2,18 +2,14 @@
  
 export default {
   darkMode: "class",
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 
   theme: {
     extend: {
       fontFamily: {
-        'serif': ['Ruda', "sans-serif"]
-      }
+        serif: ["Ruda", "sans-serif"],
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [require("daisyui")],
+};

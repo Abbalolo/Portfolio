@@ -9,12 +9,14 @@ import Contact from "./pages/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Services from "./pages/services/Services";
 import ProjectDetails from "./components/projectD/ProjectDetails";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Header />
+        <ScrollToTop/>
         <SideBar/>
         <Routes>
           <Route path="/" element={<Home />} />

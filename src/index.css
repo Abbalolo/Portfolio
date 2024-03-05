@@ -15,7 +15,24 @@
   /* background-image:url("https://c4.wallpaperflare.com/wallpaper/253/962/403/black-dark-mask-plague-doctor-wallpaper-thumb.jpg");
   background-position: cover; */
 
+.embla {
+  overflow: hidden;
+    background:rgba(40, 40, 40, 0.407);
+}
+.embla2 {
+  overflow: hidden;
 
+}
+.embla__container {
+  display: flex;
+  
+}
+.embla__slide {
+  flex: 0 0 100%;
+
+
+
+}
 .navigator li a.active{
   color:red;
 }
