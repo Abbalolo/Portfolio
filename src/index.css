@@ -6,18 +6,33 @@
   font-family: 'Ruda', sans-serif; 
   color-scheme: dark light ;
   scroll-behavior: smooth;
-  scrollbar-width: thin;
+  /* scrollbar-width: thin; */
+  padding: 0;
+  margin: 0;
+  
   /* bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] */
   
 }
 
- /* body{
-  /* background-image:url("https://c4.wallpaperflare.com/wallpaper/253/962/403/black-dark-mask-plague-doctor-wallpaper-thumb.jpg");
+ body{
+   /* background-image:url("https://c4.wallpaperflare.com/wallpaper/253/962/403/black-dark-mask-plague-doctor-wallpaper-thumb.jpg");
   background-position: cover; */
+
+ } 
+ /* .my-background{
+  background-image: url("./assets/port-bg.png");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 5em;
+
+ } */
 
 .embla {
   overflow: hidden;
-    background:rgba(40, 40, 40, 0.407);
+    
 }
 .embla2 {
   overflow: hidden;
@@ -33,12 +48,12 @@
 
 
 }
-.navigator li a.active{
+/* .navigator li a.active{
   color:red;
-}
+} */
 
-*::-webkit-scrollbar {
-  width: 10px;
+/* *::-webkit-scrollbar {
+  width: 20px;
 }
 
  *::-webkit-scrollbar-track {
@@ -46,9 +61,9 @@
 } 
 
 *::-webkit-scrollbar-thumb {
-  background-color: #272c30;
+  background-color: #080834;
  
-}
+} */
 /* 
 .active{
 background-color: rgb(74, 90, 238);

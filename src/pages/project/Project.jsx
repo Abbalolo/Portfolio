@@ -39,14 +39,14 @@ function Project() {
 
   return (
     <>
-      <section className="px-5 lg:px-16 md:px-10 pb-20 relative bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454]">
+      <section className="md:w-[70%] lg:w-[85%] w-full flex flex-col justify-center">
         <h2 className="text-xl md:text-3xl text-blue-500 font-bold mb-5">
           Portfolio.
         </h2>
 
         <ul
           data-aos="fade-in"
-          className="flex items-center justify-between md:text-[16] text-[13px] my-2"
+          className="flex items-center justify-between md:text-[16] text-[13px] my-2 w-full"
         >
           <li
             onClick={() => filterProjects(null)}
@@ -95,10 +95,10 @@ function Project() {
           </li>
         </ul>
 
-        <div
+        {/* <div
           data-aos="fade-in"
-          className="w-full h-1 bg-slate-400 mb-5 rounded-lg overflow-hidden"
-        ></div>
+          className="w-full hidden md:flex h-1 bg-slate-400 mb-5 rounded-lg overflow-hidden"
+        ></div> */}
         <div
           data-aos="fade-left"
           className="font-bold my-3 flex items-center justify-between"

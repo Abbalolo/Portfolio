@@ -202,7 +202,7 @@ export const portfolioCards = [
     language: ["React", "Typescript", "Tailwind"],
     description: "A painting service and product sales  ",
     category: "freelance project",
-    short: "A Painting Service App",
+    short: "A Painting Service website",
   },
 ];
   

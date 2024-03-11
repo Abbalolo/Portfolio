@@ -1,142 +1,70 @@
-import { useState } from "react"
-import styles from "./sideBar.module.scss"
-import {NavLink} from "react-router-dom"
+import { FiSmartphone } from "react-icons/fi"; 
+import React from 'react'
+import { AiFillFacebook, AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle, AiOutlineProject } from 'react-icons/ai';
+import { GiStrikingBalls } from 'react-icons/gi';
+import { RiHome5Line } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
+
+
+
 
 function SideBar() {
-const [home, setHome] = useState("01")
-const [home2, setHome2] = useState("02")
-const [home3, setHome3] = useState("03")
-const [home4, setHome4] = useState("04")
-const [home5, setHome5] = useState("05")
-const [home6, setHome6] = useState("06")
-
-
-
-
-const changeClick = () => {
-  setTimeout(() => {
-    home === "01" ? setHome("Home") : setHome("01")
-  },500)
- 
- 
-
-}
-const changeClickL1 = () => {
-  setTimeout(() => {
-    setHome("01")
-  },500)
-
-}
-
-
-const changeClick2 = () => {
-  setTimeout(() => {
-    (home2 === "02") ? setHome2("Service") : setHome2("02")
-  },500)
-}
-const changeClickL2 = () => {
-  setTimeout(() => {
-    setHome2("02")
-  },500)
- 
- }
-
-
-const changeClick3 = () => {
-  setTimeout(() => {
-    (home3 === "03") ? setHome3("About"): setHome3("03")
-  },500)
- 
-}
-const changeClickL3 = () => {
-  setTimeout(() => {
-    setHome3("03")
-  },500)
- 
- }
-
-
-const changeClick4 = () => {
-  setTimeout(() => {
-    (home4 === "04") ? setHome4("Work") : setHome4("04")
-  },500)
-} 
-const changeClickL4 = () => {
-  setTimeout(() => {
-    setHome4("04")
-  },500)
- 
- }
-
-
-const changeClick5 = () => {
-  setTimeout(() => {
-    (home5 === "05") ? setHome5("Contact") : setHome5("05")
-  },500)
-} 
-const changeClickL5 = () => {
-  setTimeout(() => {
-    setHome5("05")
-  },500)
- 
- }
-
-const changeClick6 = () => {
-  setTimeout(() => {
-    (home6 === "06") ? setHome6("Hire") : setHome6("06")
-  },500)
-} 
-const changeClickL6 = () => {
-  setTimeout(() => {
-    setHome6("06")
-  },500)
- 
- }
-
-
-
   return (
-    <div className={`relative z-50 hidden md:block`}>
-      <div className={styles.navigator}>
-        <li  className={styles.left}><NavLink onMouseEnter={changeClick} onMouseLeave={changeClickL1} to="/"style={({ isActive }) => ({
-              color: isActive ? '#fff' : 'black' ,
-              background: isActive ? '#4169E1' : 'white',
-              padding: "2px",
-              opacity: "0.8"
-            })}>{home}</NavLink></li>
-            
-        <li className={styles.right}><NavLink onMouseEnter={changeClick2} onMouseLeave={changeClickL2} to="/service" style={({ isActive }) => ({
-              color: isActive ? '#fff' : 'black' ,
-              background: isActive ? '#4169E1' : 'white',
-              padding: "2px",
-              opacity: "0.8"
-            })}>{home2}</NavLink></li>
-            
+    <div className="hidden md:flex flex-col gap-7 border fixed top-[90.5px] left-2 h-[80vh] border-gray-600 dark:border-gray-300 p-3 rounded-md ">
+      <Link
+        to={"/"}
+        className="flex items-center gap-2 hover:text-blue-500 transition-all duration-300 ease-in-out"
+      >
+        <RiHome5Line className="flex items-center gap-2 text-[20px]" />
+        <p className="text-[15px]">Home</p>
+      </Link>
+      <Link
+        to={"/skills"}
+        className="flex items-center gap-2  hover:text-blue-500 transition-all duration-300 ease-in-out"
+      >
+        <GiStrikingBalls className="flex items-center gap-2 text-[20px]" />
+        <p className="text-[15px]">Skills</p>
+      </Link>
+      <Link
+        to={"/project"}
+        className="flex items-center gap-2  hover:text-blue-500 transition-all duration-300 ease-in-out"
+      >
+        <AiOutlineProject className="flex items-center gap-2 text-[20px]" />
+        <p className="text-[15px]">Projects</p>
+      </Link>
+      <Link
+        to={"/contact"}
+        className="flex items-center gap-2  hover:text-blue-500 transition-all duration-300 ease-in-out"
+      >
+        <FiSmartphone className="flex items-center gap-2 text-[20px]" />
+        <p className="text-[15px]">Contact</p>
+      </Link>
 
-        <li className={styles.left}><NavLink onMouseEnter={changeClick3} onMouseLeave={changeClickL3}  to="/about" style={({ isActive }) => ({
-              color: isActive ? '#fff' : 'black' ,
-              background: isActive ? '#4169E1' : 'white',
-              padding: "2px",
-              opacity: "0.8"
-            })}>{home3}</NavLink></li>
-
-        <li className={styles.right}><NavLink onMouseEnter={changeClick4} onMouseLeave={changeClickL4}  to="/project" style={({ isActive }) => ({
-             color: isActive ? '#fff' : 'black' ,
-             background: isActive ? '#4169E1' : 'white',
-             padding: "2px",
-             opacity: "0.8"
-            })}>{home4}</NavLink></li>
-
-        <li className={styles.left}><NavLink onMouseEnter={changeClick5} onMouseLeave={changeClickL5}  to="/contact" style={({ isActive }) => ({
-              color: isActive ? '#fff' : 'black' ,
-              background: isActive ? '#4169E1' : 'white',
-              padding: "2px",
-              opacity: "0.8"
-            })}>{home5}</NavLink></li> 
-
+      <div className="flex flex-col text-2xl  justify-center items-center gap-5  text-gray-600 mt-14 ">
+        <Link target="_blank" to="https://web.facebook.com/lolo.fundz/">
+          <AiFillFacebook className="hover:text-blue-700 duration-300" />
+        </Link>
+        <Link
+          target="_blank"
+          to="https://www.linkedin.com/in/ibrahim-lawal-2772a8243/"
+        >
+          <AiFillLinkedin className="hover:text-blue-500 duration-300" />
+        </Link>
+        <Link target="_blank" to="https://twitter.com/Ibrahim46284657">
+          <AiFillTwitterCircle className="hover:text-blue-300 duration-300" />
+        </Link>
+        <Link target="_blank" to="https://github.com/Abbalolo">
+          <AiFillGithub className="hover:text-white dark:hover:text-black duration-300" />
+        </Link>
+        <Link
+          target="_blank"
+          to="https://instagram.com/lohloh009?igshid=OGQ5ZDc2ODk2ZA=="
+        >
+          <AiFillInstagram className="hover:text-red-300 duration-300" />
+        </Link>
       </div>
     </div>
-  )
+  );
 }
 
 export default SideBar
