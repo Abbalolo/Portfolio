@@ -60,10 +60,7 @@ function Hero() {
         </div> */}
 
         <div className="  border border-gray-600 dark:border-gray-300 p-5 mt-5 rounded-md">
-          <p
-            
-            className="lg:text-start my-5 dark:text-black text-[#f9f7f6] leading-8 "
-          >
+          <p className="lg:text-start my-5 dark:text-black text-[#f9f7f6] leading-8 ">
             Transformative skills that elevate your digital presence to new
             heights.
           </p>
@@ -71,7 +68,7 @@ function Hero() {
             <li className="list-disc dark:text-black text-[#f9f7f6]">
               Full Stack{" "}
               <span className="font-semibold text-gray-400 dark:text-gray-600 italic">
-                Software Develeoper
+                Software Develeoper{" "}
               </span>{" "}
               with a passion for{" "}
               <span className="font-semibold text-gray-400 dark:text-gray-600 italic">
@@ -107,9 +104,9 @@ function Hero() {
           <div className=" md:m-0 my-5">
             <button
               data-aos="zoom-in"
-              className="block  bg-gradient-to-r duration-300 hover:text-red-500 hover:scale-110 shadow-md from-blue-700 to-teal-600 py-3 px-7 "
+              className="block  bg-gradient-to-r duration-300 transition-all  hover:scale-110 shadow-md from-blue-700 to-teal-600 py-3 px-5  rounded-md "
             >
-              <Link className="text-[#f9f7f6]" to="/contact">
+              <Link className="" to="/contact">
                 Hire Me
               </Link>
             </button>
@@ -139,6 +136,7 @@ function Hero() {
               Projects
             </p>
           </div>
+          <CgArrowLongRight className="text-[20px] dark:text-black text-[#f9f7f6]" />
         </Link>
         <Link
           to={"/about"}
@@ -148,7 +146,7 @@ function Hero() {
             <GiSkills className="text-[20px] dark:text-black text-[#f9f7f6]" />
             <p className="flex  gap-3 items-center">Skills</p>
           </div>
-          <CgArrowLongRight className="text-[20px]dark:text-black text-[#f9f7f6]" />
+          <CgArrowLongRight className="text-[20px] dark:text-black text-[#f9f7f6]" />
         </Link>
       </div>
     </section>

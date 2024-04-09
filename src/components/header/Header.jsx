@@ -1,9 +1,10 @@
 import { CgDarkMode } from "react-icons/cg"; 
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import Blur from "../blur/Blur";
 // import logo from "../../assets/logo.png";
+
 import Typed from "react-typed";
 
 function Header() {
@@ -50,7 +51,7 @@ function Header() {
 
   return (
     <header
-      className={`bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] py-5 px-3 lg:px-16 md:px-8 flex items-center justify-between fixed top-0 w-full z-10`}
+      className={`bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] py-5 px-3 lg:px-16 md:px-8 flex items-center justify-between fixed top-0 w-full z-10  `}
     >
       {openNav && <Blur handleNav={handleNav} />}
       <div className="flex items-center">
@@ -61,7 +62,11 @@ function Header() {
           </h1>
           <Typed
             className="font-bold  lg:text-xl text-sm text-gray-400 dark:text-gray-400"
-            strings={["A FullStack Developer"," A FrontEnd Developer", "A Fashion Designer"]}
+            strings={[
+              "A FullStack Developer",
+              " A FrontEnd Developer",
+              "A Fashion Designer",
+            ]}
             typeSpeed={120}
             backSpeed={120}
             loop
@@ -129,9 +134,13 @@ function Header() {
 
       <div className="flex items-center gap-5">
         <button className="bg-gradient-to-r duration-300 hidden md:flex hover:text-red-500 hover:scale-110 shadow-md from-blue-500 to-teal-600 py-1 px-2 ml-5 rounded-md">
-          <Link to="abbcv.pdf" className="hover:text-red-500 text-white">
+          <a
+            href="abbacv.pdf"
+            download
+            className="hover:text-red-500 text-white"
+          >
             Resume
-          </Link>
+          </a>
         </button>
         <button
           className="cursor-pointer text-xl hidden md:flex "

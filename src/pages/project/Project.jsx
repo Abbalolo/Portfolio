@@ -46,20 +46,20 @@ function Project() {
 
         <ul
           data-aos="fade-in"
-          className="flex items-center justify-between md:text-[16] text-[13px] my-2 w-full"
+          className=" items-center justify-between md:text-[16] text-[13px] my-2 w-full hidden md:flex"
         >
           <li
             onClick={() => filterProjects(null)}
-            className={`relative ${
+            className={`relative cursor-pointer ${
               !activeFilter &&
-              "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
+              " after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
             }`}
           >
             All
           </li>
           <li
             onClick={() => filterProjects("landing page")}
-            className={`relative ${
+            className={`relative cursor-pointer ${
               activeFilter === "landing page" &&
               "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
             }`}
@@ -68,7 +68,7 @@ function Project() {
           </li>
           <li
             onClick={() => filterProjects("freelance project")}
-            className={`relative ${
+            className={`relative cursor-pointer ${
               activeFilter === "freelance project" &&
               "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
             }`}
@@ -77,7 +77,7 @@ function Project() {
           </li>
           <li
             onClick={() => filterProjects("openSource project")}
-            className={`relative ${
+            className={`relative cursor-pointer ${
               activeFilter === "openSource project" &&
               "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
             }`}
@@ -86,7 +86,7 @@ function Project() {
           </li>
           <li
             onClick={() => filterProjects("hackathon project")}
-            className={`relative ${
+            className={`relative cursor-pointer ${
               activeFilter === "hackathon project" &&
               "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
             }`}
