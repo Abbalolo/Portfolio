@@ -22,6 +22,7 @@ import { GiGraduateCap } from "react-icons/gi";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SideBar from "../../components/sidebar/SideBar";
 
 function Skills() {
   const contents = [
@@ -166,7 +167,9 @@ function Skills() {
 
   return (
     <section className="md:w-[70%] lg:w-[85%] w-full lg:h-screen">
+      <SideBar/>
       <div className="flex flex-col md:flex-row gap-5 ">
+        
         <div className="w-full flex flex-col  border border-gray-600 dark:border-gray-300 p-5 rounded-md">
           <h3 className="text-blue-500 text-2xl py-4 font-extrabold text-center">
             Teck Stack

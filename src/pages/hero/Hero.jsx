@@ -1,3 +1,5 @@
+
+import { AiOutlineMail } from "react-icons/ai"; 
 import { GiSkills } from "react-icons/gi"; 
 import { BiCodeAlt } from "react-icons/bi"; 
 import { CgArrowLongRight } from "react-icons/cg"; 
@@ -17,7 +19,7 @@ function Hero() {
   }, []);
   return (
     <section
-      className="flex flex-col md:flex-row md:items-start   md:justify-start md:w-[70%] lg:w-[85%] w-full gap-3"
+      className="flex lg:ml-20 flex-col md:flex-row md:items-start   md:justify-start md:w-[70%] lg:w-[80%] w-full gap-3"
       data-aos="fade-up"
     >
       <div className=" flex flex-col  justify-center border border-gray-600 dark:border-gray-300 p-5 rounded-md">
@@ -113,41 +115,61 @@ function Hero() {
           </div>
         </div>
       </div>
+      <div className="">
+        <div className="flex flex-col gap-3 justify-center items-center w-full border  border-gray-600 dark:border-gray-300 p-5 rounded-md mt-5 md:mt-0 dark:text-black text-[#f9f7f6]">
+          <h2 className="font-semibold ">Explor More</h2>
+          <Link
+            to={"/experience"}
+            className="flex border rounded-md border-gray-600 dark:border-gray-300 p-2 w-full  gap-3 justify-between items-center hover:bg-gray-800 dark:hover:bg-slate-100 "
+          >
+            <div className="flex  gap-3 items-center">
+              <AiOutlineGift className="text-[20px] dark:text-black text-[#f9f7f6]" />
+              <p className="flex  gap-3 items-center">Experience</p>
+            </div>
+            <CgArrowLongRight className="text-[20px] dark:text-black text-[#f9f7f6]" />
+          </Link>
+          <Link
+            to={"/project"}
+            className="flex border rounded-md border-gray-600 dark:border-gray-300 p-2 w-full  gap-3 justify-between items-center hover:bg-gray-800 dark:hover:bg-slate-100"
+          >
+            <div className="flex  gap-3 items-center">
+              <BiCodeAlt className="text-[20px] dark:text-black text-[#f9f7f6]" />
+              <p className="flex  gap-3 items-center dark:text-black text-[#f9f7f6]">
+                Projects
+              </p>
+            </div>
+            <CgArrowLongRight className="text-[20px] dark:text-black text-[#f9f7f6]" />
+          </Link>
+          <Link
+            to={"/skills"}
+            className="flex border rounded-md border-gray-600 dark:border-gray-300 p-2 w-full  gap-3 justify-between items-center hover:bg-gray-800 dark:hover:bg-slate-100"
+          >
+            <div className="flex  gap-3 items-center">
+              <GiSkills className="text-[20px] dark:text-black text-[#f9f7f6]" />
+              <p className="flex  gap-3 items-center">Skills</p>
+            </div>
+            <CgArrowLongRight className="text-[20px] dark:text-black text-[#f9f7f6]" />
+          </Link>
+        </div>
 
-      <div className="flex flex-col gap-3 justify-center items-center w-full border  border-gray-600 dark:border-gray-300 p-5 rounded-md mt-5 md:mt-0 dark:text-black text-[#f9f7f6]">
-        <h2 className="font-semibold ">Explor More</h2>
-        <Link
-          to={"/experience"}
-          className="flex border rounded-md border-gray-600 dark:border-gray-300 p-2 w-full  gap-3 justify-between items-center hover:bg-gray-800 dark:hover:bg-slate-100 "
-        >
-          <div className="flex  gap-3 items-center">
-            <AiOutlineGift className="text-[20px] dark:text-black text-[#f9f7f6]" />
-            <p className="flex  gap-3 items-center">Experience</p>
-          </div>
-          <CgArrowLongRight className="text-[20px] dark:text-black text-[#f9f7f6]" />
-        </Link>
-        <Link
-          to={"/project"}
-          className="flex border rounded-md border-gray-600 dark:border-gray-300 p-2 w-full  gap-3 justify-between items-center hover:bg-gray-800 dark:hover:bg-slate-100"
-        >
-          <div className="flex  gap-3 items-center">
-            <BiCodeAlt className="text-[20px] dark:text-black text-[#f9f7f6]" />
-            <p className="flex  gap-3 items-center dark:text-black text-[#f9f7f6]">
-              Projects
+        <div className="flex flex-col gap-3 justify-center items-center w-full border  border-gray-600 dark:border-gray-300 p-5 rounded-md mt-5 md:mt-0 dark:text-black text-[#f9f7f6]">
+          <h2 className="font-bold">Let's Connect!</h2>
+          <div className=" flex flex-col items-start gap-3">
+            <p>Do you want to know more about my work ?</p>
+            <p>or do you just want to build some cool project together?</p>
+            <p>
+              Whatever it may be, dont hesitate to{" "}
+              <span className="font-semibold text-gray-300 dark:text-gray-600 italic">
+                HIT ME UP
+              </span>
             </p>
+            <p>Here is my Email :</p>
+            <button
+              data-aos="zoom-in"
+              className="flex items-center gap-3  bg-gradient-to-r duration-300 transition-all  hover:scale-110 shadow-md from-blue-700 to-teal-600 py-3 px-3  rounded-md "
+            >abbalolo360@gmail.com <AiOutlineMail /></button>
           </div>
-          <CgArrowLongRight className="text-[20px] dark:text-black text-[#f9f7f6]" />
-        </Link>
-        <Link
-          to={"/about"}
-          className="flex border rounded-md border-gray-600 dark:border-gray-300 p-2 w-full  gap-3 justify-between items-center hover:bg-gray-800 dark:hover:bg-slate-100"
-        >
-          <div className="flex  gap-3 items-center">
-            <GiSkills className="text-[20px] dark:text-black text-[#f9f7f6]" />
-            <p className="flex  gap-3 items-center">Skills</p>
-          </div>
-          <CgArrowLongRight className="text-[20px] dark:text-black text-[#f9f7f6]" />
-        </Link>
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import { CgDarkMode } from "react-icons/cg"; 
-import {  NavLink } from "react-router-dom";
+import {  Link, NavLink } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import {  useState } from "react";
 import Blur from "../blur/Blur";
@@ -57,9 +57,12 @@ function Header() {
       <div className="flex items-center">
         {/* <img src={logo} className="w-10 h-30 " alt="Ibrahim" /> */}
         <div className="flex items-center gap-4">
+          <Link to={"/"}>
           <h1 className="text-[20px] text-blue-500 font-semibold md:text-[30px] lg:text-start ">
             IBRAHIM LAWAL ABBA
           </h1>
+
+            </Link>
           <Typed
             className="font-bold  lg:text-xl text-sm text-gray-400 dark:text-gray-400"
             strings={[
@@ -103,7 +106,7 @@ function Header() {
             className="py-3 hover:text-4xl text-xl duration-300 ease-in  hover:underline underline-offset-4"
             onClick={closeNav}
           >
-            <NavLink id="home" to="/about">
+            <NavLink id="home" to="/skills">
               About
             </NavLink>
           </li>
@@ -133,7 +136,7 @@ function Header() {
       </nav>
 
       <div className="flex items-center gap-5">
-        <button className="bg-gradient-to-r duration-300 hidden md:flex hover:text-red-500 hover:scale-110 shadow-md from-blue-500 to-teal-600 py-1 px-2 ml-5 rounded-md">
+        {/* <button className="bg-gradient-to-r duration-300 hidden md:flex hover:text-red-500 hover:scale-110 shadow-md from-blue-500 to-teal-600 py-1 px-2 ml-5 rounded-md">
           <a
             href="abbacv.pdf"
             download
@@ -141,7 +144,7 @@ function Header() {
           >
             Resume
           </a>
-        </button>
+        </button> */}
         <button
           className="cursor-pointer text-xl hidden md:flex "
           onClick={handleToggleDarkMode}

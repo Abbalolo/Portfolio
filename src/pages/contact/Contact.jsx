@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import SideBar from "../../components/sidebar/SideBar";
 
 
 function Contact() {
@@ -43,6 +44,7 @@ function Contact() {
   return (
     <section className="mt-8 lg:mt-0 w-full  ">
       <ToastContainer />
+      <SideBar/>
       <h2
         data-aos="fade-left"
         className="py-1  font-extrabold text-2xl text-center md:text-4xl  text-blue-500 dark:text-blue-500 mb-5"

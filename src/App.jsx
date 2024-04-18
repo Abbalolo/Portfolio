@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <ScrollToTop />
-       <SideBar/>
+       {/* <SideBar/> */}
 
         <Routes>
           <Route path="/" element={<Home />} />

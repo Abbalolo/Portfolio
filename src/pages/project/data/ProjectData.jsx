@@ -45,7 +45,7 @@ export const portfolioCards = [
     github: "https://github.com/Abbalolo/CodSoft-1.git",
     host: "https://my-codsoft-blog-app.netlify.app",
     image: blog,
-    language: ["React", "Node.js", "TypeScript", "Tailwind CSS"],
+    language: ["React", "Node.js", "TypeScript", "Tailwind"],
     description:
       "A professional blog app powered by JavaScript and a JSON server. Seamlessly crafted to provide an interactive platform for bloggers and readers, featuring intuitive user interface and efficient data management.",
     short: "A blog app for creating and sharing content",
@@ -83,56 +83,11 @@ export const portfolioCards = [
     short: "A SEO digital agency web app",
     category: "Landing Page",
   },
+ 
+  
+  
   {
     id: 6,
-    name: "Dictionary",
-    github: "https://github.com/Abbalolo/Dictionary-app.git",
-    host: "https://dictionaryspeech.netlify.app",
-    image: dictionary,
-    language: ["React", "HTML", "CSS", "JavaScript", "API"],
-    description:
-      "A simple yet professional dictionary app that allows users to search for meaningful or existing words.",
-    short: "A dictionary web app",
-    category: "Personal Project",
-  },
-  {
-    id: 7,
-    name: "Todo",
-    github: "https://github.com/Abbalolo/my-todo-app.git",
-    host: "https://lohdev-todo.netlify.app",
-    image: todo,
-    language: ["React", "JavaScript", "HTML", "CSS"],
-    description:
-      "A professional to-do app that enables users to add tasks of the day in order to track their progress. Experience productivity at your fingertips with an intuitive and user-friendly interface.",
-    short: "A to-do app for task management",
-    category: "Personal Project",
-  },
-  {
-    id: 8,
-    name: "Quiz",
-    github: "https://github.com/Abbalolo/my-react-quiz.git",
-    host: "https://lohdev-quiz.netlify.app",
-    image: quiz,
-    language: ["React", "JavaScript", "HTML", "CSS"],
-    description:
-      "An engaging and professional quiz app that asks users questions and provides answers. Dive into a world of questions and answers, where learning and entertainment come together seamlessly.",
-    short: "A quiz app for testing knowledge",
-    category: "Personal Project",
-  },
-  {
-    id: 9,
-    name: "Furniture",
-    github: "https://github.com/Abbalolo/Landing-Page.git",
-    host: "https://furniture-landingpage.netlify.app",
-    image: funiture,
-    language: ["JavaScript", "HTML", "CSS"],
-    description:
-      "Discover the art of interior design with a professional furniture landing page. Immerse yourself in a world of exquisite craftsmanship and elegant aesthetics, offering style, comfort, and functionality for every space.",
-    short: "A furniture landing page",
-    category: "Landing Page",
-  },
-  {
-    id: 10,
     name: "Resume",
     github: "https://github.com/Abbalolo/resume-builder.git",
     host: "https://my-resume-builder-loh.netlify.app",
@@ -144,7 +99,7 @@ export const portfolioCards = [
     category: "Personal Project",
   },
   {
-    id: 11,
+    id:7,
     name: "Space World",
     github: "https://github.com/Abbalolo/My-Space.git",
     host: "https://myuniverse-x.netlify.app",
@@ -155,20 +110,9 @@ export const portfolioCards = [
     short: "A space world landing page",
     category: "Personal Project",
   },
+  
   {
-    id: 12,
-    name: "Tic Tac Toe",
-    github: "https://github.com/Abbalolo/tic-tac-toe.git",
-    host: "https://loh-tic-tac-toe-game.netlify.app",
-    image: ticTacToe,
-    language: ["JavaScript", "HTML", "CSS"],
-    description:
-      "Enjoy a professional Tic Tac Toe game with AI, providing entertainment and challenge for players of all levels.",
-    short: "A Tic Tac Toe game with AI",
-    category: "Personal Project",
-  },
-  {
-    id: 13,
+    id: 8,
     name: "Shopify",
     github: "https://github.com/Abbalolo/hackathon.git",
     host: "https://loh-shopify-hackathon.netlify.app",
@@ -180,7 +124,7 @@ export const portfolioCards = [
     category: "Hackathon Project",
   },
   {
-    id: 14,
+    id:9,
     name: "Tailoring Measurement App",
     github: "https://github.com/Abbalolo/tailor-measurement-app.git",
     host: "https://tailoringmeasurement.netlify.app",
@@ -192,7 +136,7 @@ export const portfolioCards = [
     category: "Personal Project",
   },
   {
-    id: 15,
+    id: 10,
     name: "Technophilic",
     github: "https://github.com/Abbalolo/my-painting-website.git",
     host: "https://technophilic.netlify.app",
@@ -204,7 +148,7 @@ export const portfolioCards = [
     category: "Freelance Project",
   },
   {
-    id: 16,
+    id: 11,
     name: "Project Management Tool",
     github: "https://github.com/Abbalolo/CodSoft-2.git",
     host: "https://codsoft-project-managment.netlify.app",
@@ -216,14 +160,14 @@ export const portfolioCards = [
     category: "Freelance Project",
   },
   {
-    id: 17,
+    id: 12,
     name: "Mightyweld fun game",
     github: "https://github.com/Abbalolo/my-mightymeld.git",
     host: "https://mightyweld-submit.netlify.app",
     image: technophilic,
-    language: ["React", "Tailwind CSS"],
+    language: ["React", "Tailwind"],
     description:
-      "A professional project management tool designed to streamline project planning, execution, and tracking, providing a centralized platform for collaboration and communication.",
+      "A fun game.",
     short: "A project management tool",
     category: "Freelance Project",
   },
