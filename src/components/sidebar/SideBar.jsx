@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 function SideBar() {
   return (
-    <div className="hidden md:flex flex-col gap-7 border fixed top-[90.5px] left-7 h-[80vh] border-gray-600 dark:border-gray-300 p-3 rounded-md ">
+    <div className="hidden md:flex flex-col gap-7 border fixed top-[90.5px] left-7 h-[83vh] border-gray-600 dark:border-gray-300 p-3 rounded-md ">
       <Link
         to={"/"}
         className="flex items-center gap-2 hover:text-blue-500 transition-all duration-300 ease-in-out"

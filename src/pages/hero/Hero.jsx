@@ -19,7 +19,7 @@ function Hero() {
   }, []);
   return (
     <section
-      className="flex lg:ml-20 flex-col md:flex-row md:items-start   md:justify-start md:w-[70%] lg:w-[80%] w-full gap-3"
+      className="flex lg:ml-20 md:ml-28 flex-col md:flex-row md:items-start   md:justify-start md:w-[70%] lg:w-[80%] w-full gap-3"
       data-aos="fade-up"
     >
       <div className=" flex flex-col  justify-center border border-gray-600 dark:border-gray-300 p-5 rounded-md">
