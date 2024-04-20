@@ -17,7 +17,7 @@ function Project() {
       setTotalCard(portfolioCards.length);
     } else {
       const filteredProjects = portfolioCards.filter(
-        (card) => card.category === category
+        (card) => card.category.toLowerCase() === category.toLowerCase()
       );
       setCurrentCard(filteredProjects);
       setActiveFilter(category);
@@ -41,8 +41,8 @@ function Project() {
   return (
     <>
       <section className="md:w-[70%] lg:w-[85%] w-full flex flex-col justify-center">
-        <div className=" flex gap-5">
-          <SideBar/>
+        <div className="flex gap-5">
+          <SideBar />
           <div className="">
             <h2 className="text-xl md:text-3xl text-blue-500 font-bold mb-5">
               Portfolio.
@@ -50,48 +50,48 @@ function Project() {
 
             <ul
               data-aos="fade-in"
-              className=" items-center justify-between md:text-[16] text-[13px] my-2 w-full hidden md:flex"
+              className="md:flex items-center justify-between md:text-[16] text-[13px] my-2 w-full hidden"
             >
               <li
                 onClick={() => filterProjects(null)}
                 className={`relative cursor-pointer ${
                   !activeFilter &&
-                  " after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
+                  "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
                 }`}
               >
                 All
               </li>
               <li
-                onClick={() => filterProjects("landing page")}
+                onClick={() => filterProjects("Landing Page")}
                 className={`relative cursor-pointer ${
-                  activeFilter === "landing page" &&
+                  activeFilter === "Landing Page" &&
                   "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
                 }`}
               >
                 Landing Page
               </li>
               <li
-                onClick={() => filterProjects("freelance project")}
+                onClick={() => filterProjects("Freelance Project")}
                 className={`relative cursor-pointer ${
-                  activeFilter === "freelance project" &&
+                  activeFilter === "Freelance Project" &&
                   "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
                 }`}
               >
                 Freelance
               </li>
-              <li
-                onClick={() => filterProjects("openSource project")}
+              {/* <li
+                onClick={() => filterProjects("Open Source Project")}
                 className={`relative cursor-pointer ${
-                  activeFilter === "openSource project" &&
+                  activeFilter === "Open Source Project" &&
                   "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
                 }`}
               >
                 Open Source
-              </li>
+              </li> */}
               <li
-                onClick={() => filterProjects("hackathon project")}
+                onClick={() => filterProjects("Hackathon Project")}
                 className={`relative cursor-pointer ${
-                  activeFilter === "hackathon project" &&
+                  activeFilter === "Hackathon Project" &&
                   "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
                 }`}
               >
@@ -99,16 +99,12 @@ function Project() {
               </li>
             </ul>
 
-            {/* <div
-          data-aos="fade-in"
-          className="w-full hidden md:flex h-1 bg-slate-400 mb-5 rounded-lg overflow-hidden"
-        ></div> */}
             <div
               data-aos="fade-left"
               className="font-bold my-3 flex items-center justify-between"
             >
               <div>
-                Total - <span className=" text-blue-500 ">{totalCard}</span>
+                Total - <span className="text-blue-500">{totalCard}</span>
               </div>
               <div className="md:hidden">
                 <select

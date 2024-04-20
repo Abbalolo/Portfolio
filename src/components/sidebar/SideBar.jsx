@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 
 
 
-
 function SideBar() {
   return (
     <div className="hidden md:flex flex-col gap-7 border fixed top-[90.5px] left-7 h-[83vh] border-gray-600 dark:border-gray-300 p-3 rounded-md ">

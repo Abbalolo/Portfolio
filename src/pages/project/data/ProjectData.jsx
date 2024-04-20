@@ -123,20 +123,9 @@ export const portfolioCards = [
     short: "An accessible Shopify page",
     category: "Hackathon Project",
   },
+  
   {
-    id:9,
-    name: "Tailoring Measurement App",
-    github: "https://github.com/Abbalolo/tailor-measurement-app.git",
-    host: "https://tailoringmeasurement.netlify.app",
-    image: tailor,
-    language: ["React", "TypeScript", "Tailwind CSS"],
-    description:
-      "A professional tailoring measurement app that helps fashion designers store or save customer measurements, ensuring accuracy and efficiency in tailoring processes.",
-    short: "A tailoring measurement app",
-    category: "Personal Project",
-  },
-  {
-    id: 10,
+    id: 9,
     name: "Technophilic",
     github: "https://github.com/Abbalolo/my-painting-website.git",
     host: "https://technophilic.netlify.app",
@@ -148,7 +137,7 @@ export const portfolioCards = [
     category: "Freelance Project",
   },
   {
-    id: 11,
+    id: 10,
     name: "Project Management Tool",
     github: "https://github.com/Abbalolo/CodSoft-2.git",
     host: "https://codsoft-project-managment.netlify.app",
@@ -160,7 +149,7 @@ export const portfolioCards = [
     category: "Freelance Project",
   },
   {
-    id: 12,
+    id: 11,
     name: "Mightyweld fun game",
     github: "https://github.com/Abbalolo/my-mightymeld.git",
     host: "https://mightyweld-submit.netlify.app",
@@ -169,6 +158,6 @@ export const portfolioCards = [
     description:
       "A fun game.",
     short: "A project management tool",
-    category: "Freelance Project",
+    category: "Hackathon Project",
   },
 ];
