@@ -8,7 +8,14 @@ import Typed from "react-typed";
 function Header() {
   const [openNav, setOpenNav] = useState(false);
   const [theme, setTheme] = useState("light");
-
+  const handleDownload = () => {
+   
+    const pdfUrl = "https://www.canva.com/design/DAFzJ9XhyNw/FIuabRqsddG5K6OS3GmvXA/view";
+    const anchor = document.createElement('a');
+    anchor.href = pdfUrl;
+    anchor.download = 'downloaded-file.pdf'; 
+    anchor.click();
+  };
   useEffect(() => {
     const updateTheme = () => {
       const currentHour = new Date().getHours();
@@ -69,35 +76,43 @@ function Header() {
           />
         </div>
       </div>
+      
       <nav className={openNav ? " flex bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] fixed shadow-md left-0 top-0 w-full  h-full z-50 px-10 duration-500 ease-in-out " : "fixed top-[-100%]"}>
         <ul className="pt-10 mx-auto text-center ">
           <button className="cursor-pointer text-xl absolute left-12" onClick={handleToggleDarkMode}>
             <CgDarkMode onClick={closeNav} />
           </button>
           <li className="py-3 hover:text-4xl text-xl duration-300 ease-in  hover:underline underline-offset-4" onClick={closeNav}>
-            <NavLink id="home" to="/">Home</NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="py-3 hover:text-4xl text-xl duration-300 ease-in  hover:underline underline-offset-4" onClick={closeNav}>
-            <NavLink id="home" to="/skills">Skills</NavLink>
+            <NavLink to="/skills">Skills</NavLink>
           </li>
           <li className="py-3 hover:text-4xl text-xl duration-300 ease-in  hover:underline underline-offset-4" onClick={closeNav}>
-            <NavLink id="home" to="/experience">Experience</NavLink>
+            <NavLink to="/experience">Experience</NavLink>
           </li>
           <li className="py-3 hover:text-4xl text-xl duration-300 ease-in  hover:underline underline-offset-4" onClick={closeNav}>
-            <NavLink id="home" to="/project">Projects</NavLink>
+            <NavLink to="/project">Projects</NavLink>
           </li>
           <li className="py-3 hover:text-4xl text-xl duration-300 ease-in  hover:underline underline-offset-4" onClick={closeNav}>
             <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
       </nav>
+     
 
       <div className="flex items-center gap-5">
+      <button
+             onClick={handleDownload}
+              className="flex text-white items-center gap-3  bg-gradient-to-r duration-300 transition-all  hover:scale-110 shadow-md from-blue-700 to-teal-600  py-1 px-3  rounded-md "
+            >Resume</button>
         <button className="cursor-pointer text-xl hidden md:flex " onClick={handleToggleDarkMode}>
           <CgDarkMode />
         </button>
+        
 
-        <button className="ml-4 z-50 md:hidden transition-all duration-500 ease-in-out " onClick={handleNav}>
+        <button className=" z-50 md:hidden transition-all duration-500 ease-in-out " onClick={handleNav}>
+        
           {!openNav ? (
             <AiOutlineMenu size={20} />
           ) : (
