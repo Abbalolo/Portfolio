@@ -97,6 +97,12 @@ function Header() {
           <li className="py-3 hover:text-4xl text-xl duration-300 ease-in  hover:underline underline-offset-4" onClick={closeNav}>
             <NavLink to="/contact">Contact</NavLink>
           </li>
+          <div className="w-full flex items-center justify-center my-4">
+        <button
+             onClick={handleDownload}
+              className="flex text-white items-center gap-3  bg-gradient-to-r duration-300 transition-all  hover:scale-110 shadow-md from-blue-700 to-teal-600  py-1 px-3  rounded-md "
+            >Resume</button>
+            </div>
         </ul>
       </nav>
      
@@ -104,7 +110,7 @@ function Header() {
       <div className="flex items-center gap-5">
       <button
              onClick={handleDownload}
-              className="flex text-white items-center gap-3  bg-gradient-to-r duration-300 transition-all  hover:scale-110 shadow-md from-blue-700 to-teal-600  py-1 px-3  rounded-md "
+              className="hidden md:flex text-white items-center gap-3  bg-gradient-to-r duration-300 transition-all  hover:scale-110 shadow-md from-blue-700 to-teal-600  py-1 px-3  rounded-md "
             >Resume</button>
         <button className="cursor-pointer text-xl hidden md:flex " onClick={handleToggleDarkMode}>
           <CgDarkMode />
