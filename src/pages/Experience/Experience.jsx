@@ -30,7 +30,7 @@ function Experience() {
                 <img className="rounded-md border-gray-600 " src={item.image} alt={item.name} />
               </div>
               <div className="flex flex-col">
-              <p className="mt-2">{item.short}</p>
+              <p className="mt-2">{item.achieve}</p>
         <Link className="flex items-center justify-between border my-2 border-gray-600 dark:border-gray-300 rounded-md p-2 hover:bg-gray-800 dark:hover:bg-slate-100" to={`/project/${item.id}`}>
 Click To View More
 <CgArrowLongRight className="text-[20px] dark:text-black text-[#f9f7f6]" />

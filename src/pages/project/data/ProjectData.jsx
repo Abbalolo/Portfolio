@@ -9,6 +9,8 @@ import resume from "../project-image/resume.png";
 import space from "../project-image/space.png";
 
 import hackathon from "../project-image/hackathon.png";
+import projectManagement from "../project-image/project-management.png";
+import mightymeld from "../project-image/mightymeld.png";
 
 import technophilic from "../project-image/technophilic.png";
 
@@ -45,8 +47,9 @@ export const portfolioCards = [
     image: blog,
     language: ["React", "Node.js", "TypeScript", "Tailwind"],
     description:
-      "A professional blog app powered by JavaScript and a JSON server. Seamlessly crafted to provide an interactive platform for bloggers and readers, featuring intuitive user interface and efficient data management.",
+      "A professional blog app powered by React and MongoDB Seamlessly crafted to provide an interactive platform for bloggers and readers, featuring intuitive user interface and efficient data management.",
     short: "A blog app for creating and sharing content.",
+    achieve: "Developed a comprehensive blog website using full-stack technologies to ensure a seamless user experience and engaging content delivery.",
     category: "Experience Project",
     field: "Web Developer"
   },
@@ -132,6 +135,7 @@ export const portfolioCards = [
     description:
       "A professional painting service and product sales website, offering quality services and products to customers.",
     short: "A painting service website.",
+    achieve: "Technophilic Paints is a bespoke freelance website specializing in premium paint and tools for painting enthusiasts.",
     category: "Experience Project",
     field: "Fullstack Developer"
   },
@@ -140,11 +144,12 @@ export const portfolioCards = [
     name: "Project Management Tool",
     github: "https://github.com/Abbalolo/CodSoft-2.git",
     host: "https://codsoft-project-managment.netlify.app",
-    image: technophilic,
+    image: projectManagement,
     language: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
     description:
       "A professional project management tool designed to streamline project planning, execution, and tracking, providing a centralized platform for collaboration and communication.",
     short: "A project management tool.",
+    achieve: "Seamlessly organize tasks, deadlines, and resources for efficient project management.",
     category: "Experience Project",
     field: "Fullstack Developer"
   },
@@ -153,7 +158,7 @@ export const portfolioCards = [
     name: "Mightyweld fun game",
     github: "https://github.com/Abbalolo/my-mightymeld.git",
     host: "https://mightyweld-submit.netlify.app",
-    image: technophilic,
+    image: mightymeld,
     language: ["React", "Tailwind"],
     description:
       "A fun game.",
