@@ -108,7 +108,7 @@ function Hero() {
               data-aos="zoom-in"
               className="block  bg-gradient-to-r duration-300 transition-all  hover:scale-110 shadow-md from-blue-700 to-teal-600 py-3 px-5  rounded-md "
             >
-              <Link className="" to="/contact">
+              <Link className="text-white" to="/contact">
                 Hire Me
               </Link>
             </button>
@@ -152,7 +152,7 @@ function Hero() {
           </Link>
         </div>
 
-        <div className="flex flex-col gap-3 justify-center items-center w-full border  border-gray-600 dark:border-gray-300 p-5 rounded-md mt-5 md:mt-0 dark:text-black text-[#f9f7f6]">
+        <div className="dark:text-black text-[#f9f7f6] flex flex-col gap-3 justify-center items-center w-full border  border-gray-600 dark:border-gray-300 p-5 rounded-md mt-5 md:mt-0 dark:text-black text-[#f9f7f6]">
           <h2 className="font-bold">Let's Connect!</h2>
           <div className=" flex flex-col items-start gap-3">
             <p>Do you want to know more about my work ?</p>
@@ -166,7 +166,7 @@ function Hero() {
             <p>Here is my Email :</p>
             <button
               data-aos="zoom-in"
-              className="flex items-center gap-3  bg-gradient-to-r duration-300 transition-all  hover:scale-110 shadow-md from-blue-700 to-teal-600 py-3 px-3  rounded-md "
+              className="flex text-white items-center gap-3  bg-gradient-to-r duration-300 transition-all  hover:scale-110 shadow-md from-blue-700 to-teal-600  py-3 px-3  rounded-md "
             >abbalolo360@gmail.com <AiOutlineMail /></button>
           </div>
         </div>

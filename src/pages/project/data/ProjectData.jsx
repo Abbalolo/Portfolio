@@ -1,17 +1,15 @@
 import lava from "../project-image/lava.png";
 import blog from "../project-image/blog.png";
 import ecommerce from "../project-image/ecommerce.png";
-import dictionary from "../project-image/dictionary.png";
-import todo from "../project-image/todo.png";
-import quiz from "../project-image/quiz.png";
+
 import portfolio from "../project-image/portfolio.png";
-import funiture from "../project-image/funiture.png";
+
 import seo from "../project-image/seo-agency.png";
 import resume from "../project-image/resume.png";
 import space from "../project-image/space.png";
-import ticTacToe from "../project-image/tic-tac-toe.png";
+
 import hackathon from "../project-image/hackathon.png";
-import tailor from "../project-image/tailoring.png";
+
 import technophilic from "../project-image/technophilic.png";
 
 export const portfolioCards = [
@@ -48,8 +46,9 @@ export const portfolioCards = [
     language: ["React", "Node.js", "TypeScript", "Tailwind"],
     description:
       "A professional blog app powered by JavaScript and a JSON server. Seamlessly crafted to provide an interactive platform for bloggers and readers, featuring intuitive user interface and efficient data management.",
-    short: "A blog app for creating and sharing content",
+    short: "A blog app for creating and sharing content.",
     category: "Experience Project",
+    field: "Web Developer"
   },
   {
     id: 4,
@@ -118,8 +117,7 @@ export const portfolioCards = [
     host: "https://loh-shopify-hackathon.netlify.app",
     image: hackathon,
     language: ["JavaScript", "HTML", "CSS"],
-    description:
-      "A professional Shopify page for creating accounts and accessing a website that is accessible to screen readers, keyboard users, and mouse users alike.",
+    description:"A professional Shopify page for creating accounts and accessing a website that is accessible to screen readers, keyboard users, and mouse users alike.",
     short: "An accessible Shopify page",
     category: "Hackathon Project",
   },
@@ -133,8 +131,9 @@ export const portfolioCards = [
     language: ["React", "TypeScript", "Tailwind CSS"],
     description:
       "A professional painting service and product sales website, offering quality services and products to customers.",
-    short: "A painting service website",
-    category: "Freelance Project",
+    short: "A painting service website.",
+    category: "Experience Project",
+    field: "Fullstack Developer"
   },
   {
     id: 10,
@@ -145,8 +144,9 @@ export const portfolioCards = [
     language: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
     description:
       "A professional project management tool designed to streamline project planning, execution, and tracking, providing a centralized platform for collaboration and communication.",
-    short: "A project management tool",
-    category: "Freelance Project",
+    short: "A project management tool.",
+    category: "Experience Project",
+    field: "Fullstack Developer"
   },
   {
     id: 11,
@@ -157,7 +157,8 @@ export const portfolioCards = [
     language: ["React", "Tailwind"],
     description:
       "A fun game.",
-    short: "A project management tool",
+    short: "A project management tool.",
     category: "Hackathon Project",
+    
   },
 ];

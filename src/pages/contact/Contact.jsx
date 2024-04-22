@@ -42,7 +42,7 @@ function Contact() {
         
 
   return (
-    <section className="mt-8 lg:mt-0 w-full  ">
+    <section className="mt-8 lg:mt-0 w-full  dark:text-black text-[#f9f7f6]">
       <ToastContainer />
       <SideBar/>
       <h2

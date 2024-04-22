@@ -7,7 +7,7 @@ export function EmblaCarousel({currentCard}) {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
 
   return (
-    <div className="embla" ref={emblaRef}>
+    <div className="embla " ref={emblaRef}>
       <div className="embla__container">
         <div className="embla__slide">
           {currentCard.length <= 3 ? (
@@ -68,23 +68,14 @@ export function EmblaCarousel({currentCard}) {
                     <div className="relative rounded-md overflow-hidden h-full">
                       <img className="" src={card.image} alt="pic" />
 
-                      <div className=" absolute top-0 left-0 h-full w-full flex items-end justify-end duration-300 gap-5 backdrop-brightness-[65%]">
-                        <div className="flex flex-col w-full p-3">
-                          <h1 className="text-xl text-white font-extrabold">
+                      <div className="group absolute top-0 left-0 h-full w-full flex items-end justify-end duration-300 gap-5 hover:backdrop-brightness-[45%]">
+                        <div className=" flex-col w-full p-3 hidden group-hover:flex">
+                          <h1 className=" text-xl text-white font-extrabold  ">
                             {card.name}
                           </h1>
                           <p className="text-gray-100">{card.short}</p>
 
-                          <div className="flex flex-wrap gap-2 py-1">
-                            {card.language.map((language, index) => (
-                              <span
-                                key={index}
-                                className="text-[12px] md:text-md text-white hover:bg-blue-500 hover:text-white bg-gray-400 rounded-2xl py-[2px] px-2 text-center duration-300 cursor-pointer"
-                              >
-                                {language}
-                              </span>
-                            ))}
-                          </div>
+                         
                         </div>
                       </div>
                     </div>

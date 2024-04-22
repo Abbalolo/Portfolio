@@ -4,11 +4,12 @@ import Home from "./pages/home/Home";
 import Project from "./pages/project/Project";
 import Contact from "./pages/contact/Contact";
 import Footer from "./components/footer/Footer";
-import Services from "./pages/services/Services";
+
 import ProjectDetails from "./components/projectD/ProjectDetails";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 import Skills from "./pages/skill/Skills";
-import SideBar from "./components/sidebar/SideBar";
+import Experience from "./pages/Experience/Experience";
+
 
 function App() {
   return (
@@ -16,11 +17,10 @@ function App() {
       <BrowserRouter>
         <Header />
         <ScrollToTop />
-       {/* <SideBar/> */}
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/service" element={<Services />} />
+          <Route path="/experience" element={<Experience/>} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />

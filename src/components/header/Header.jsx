@@ -107,15 +107,15 @@ function Header() {
             onClick={closeNav}
           >
             <NavLink id="home" to="/skills">
-              About
+              Skills
             </NavLink>
           </li>
           <li
             className="py-3 hover:text-4xl text-xl duration-300 ease-in  hover:underline underline-offset-4"
             onClick={closeNav}
           >
-            <NavLink id="home" to="/service">
-              Service
+            <NavLink id="home" to="/experience">
+              Experience
             </NavLink>
           </li>
           <li
