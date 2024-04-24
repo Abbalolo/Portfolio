@@ -172,7 +172,7 @@ function Skills() {
         
         <div className="w-full flex flex-col  border border-gray-600 dark:border-gray-300 p-5 rounded-md">
           <h3 className="text-blue-500 text-2xl py-4 font-extrabold text-center">
-            Teck Stack
+            TechStack
           </h3>
           <div className=" flex flex-wrap gap-3 ">
             {myStacks.map((stack, index) => (
@@ -190,7 +190,7 @@ function Skills() {
         </div>
         <div className="w-full flex flex-col  border border-gray-600 dark:border-gray-300 p-5 rounded-md">
           <h3 className="text-blue-500 text-2xl py-4 font-extrabold text-center">
-            Framewords / Library
+            Frameworks / Library
           </h3>
           <div className="mt-3 flex flex-wrap gap-3 ">
             {framLib.map((lab, i) => (

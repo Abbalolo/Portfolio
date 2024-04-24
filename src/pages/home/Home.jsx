@@ -9,7 +9,7 @@ function Home() {
    
     const delay = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); 
+    }, 2000); 
 
     
     return () => clearTimeout(delay);
