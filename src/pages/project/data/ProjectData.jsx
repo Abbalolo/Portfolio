@@ -9,7 +9,7 @@ import resume from "../project-image/resume.png";
 import space from "../project-image/space.png";
 
 import hackathon from "../project-image/hackathon.png";
-import projectManagement from "../project-image/project-management.png";
+import projectManagement from "../project-image/Project-Management.png"
 import mightymeld from "../project-image/mightymeld.png";
 
 import technophilic from "../project-image/technophilic.png";

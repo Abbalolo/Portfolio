@@ -9,7 +9,6 @@ function ProjectDetails() {
     const { projectId } = useParams();
     const project = portfolioCards.find((item) => item.id == projectId);
     const { name, image, language, github, host, description, short } = project;
-    // console.log(project);
 
     return (
         <section className='relative px-5 lg:px-16 md:px-10 pb-40 bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-black'>
