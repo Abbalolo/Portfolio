@@ -115,7 +115,8 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="">
+      
+      <div className="flex flex-col gap-3 ">
         <div className="flex flex-col gap-3 justify-center items-center w-full border  border-gray-600 dark:border-gray-300 p-5 rounded-md mt-5 md:mt-0 dark:text-black text-[#f9f7f6]">
           <h2 className="font-semibold ">Explor More</h2>
           <Link

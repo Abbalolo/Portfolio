@@ -17,16 +17,18 @@ function Home() {
 
   return (
     <>
-      {isLoading ? (
-        <div className="h-[80vh] w-full flex justify-center items-center">
+     
+
+
+{isLoading && (
+        <div className="bg-[#212529] absolute top-0 left-0 h-[100vh] z-50 w-full flex justify-center items-center">
         <span className="loader"></span>
         </div>
-      ) : (
-        <div className="flex gap-3">
+      ) }
+      <div className="flex gap-3">
           <SideBar />
           <Hero />
         </div>
-      )}
     </>
   );
 }

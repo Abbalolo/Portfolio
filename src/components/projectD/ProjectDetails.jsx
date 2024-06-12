@@ -11,11 +11,13 @@ function ProjectDetails() {
     const { name, image, language, github, host, description, short } = project;
 
     return (
-        <section className='relative px-5 lg:px-16 md:px-10 pb-40 bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-black'>
-            <h1 className='font-extrabold text-xl pt-2 pb-2'>{name}</h1>
+        <section className='flex flex-col md:flex-row gap-10 relative px-5 lg:px-16 md:px-10 pb-40 bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-black'>
+           
+            <img className="rounded-lg md:w-[600px] h-full" src={image} alt="pic" />
+            
+<div className="">
+<h1 className='font-extrabold text-xl pt-2 pb-2'>{name}</h1>
             <p className=" pb-3 text-[#f9f7f6] dark:text-[#545454]">{short}</p>
-            <img className="rounded-lg" src={image} alt="pic" />
-
             <div className='mt-4'>
                 <h2 className='font-semibold text-xl'>About</h2>
                 <p className="text-[#f9f7f6] dark:text-[#545454]">{description}</p>
@@ -40,9 +42,10 @@ function ProjectDetails() {
                 <Link to={github} className="text-blue-600 hover:underline cursor-pointer">{github}</Link>
             </div>
 
-            <Link className="mt-4 bg-blue-900 p-3 w-full absolute bottom-12 left-0 flex items-center justify-center gap-2 dark:text-[#f9f7f6]" to={host}>
+            <Link className="mt-4 bg-blue-900 p-3 w-full  flex items-center justify-center gap-2 dark:text-[#f9f7f6]" to={host}>
                 Open Project <BiLinkExternal className="text-[18px]" />
             </Link>
+            </div>
         </section>
     );
 }

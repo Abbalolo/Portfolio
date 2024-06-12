@@ -16,24 +16,8 @@ function Header() {
     anchor.download = 'downloaded-file.pdf'; 
     anchor.click();
   };
-  useEffect(() => {
-    const updateTheme = () => {
-      const currentHour = new Date().getHours();
-      if (currentHour >= 19 || currentHour < 7) {
-        setTheme("dark");
-        document.documentElement.classList.add("dark");
-      } else {
-        setTheme("light");
-        document.documentElement.classList.remove("dark");
-      }
-    };
 
-    const intervalId = setInterval(updateTheme, 60000); // Check the time every minute
 
-    return () => {
-      clearInterval(intervalId); 
-    };
-  }, []);
 
   const handleToggleDarkMode = () => {
     const html = document.querySelector("html");
@@ -55,20 +39,20 @@ function Header() {
   };
 
   return (
-    <header className={`bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] py-5 px-3 lg:px-16 md:px-8 flex items-center justify-between fixed top-0 w-full z-10  `}>
+    <header className={`bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454] px-3 py-3 lg:px-16  flex items-center justify-between fixed top-0 left-0 w-full z-10 `}>
       {openNav && <Blur handleNav={handleNav} />}
       <div className="flex items-center">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           <Link to={"/"}>
             <h1 className="text-[20px] text-blue-500 font-semibold md:text-[30px] lg:text-start ">
               IBRAHIM LAWAL ABBA
             </h1>
           </Link>
           <Typed
-            className="font-bold  lg:text-xl text-sm text-gray-400 dark:text-gray-400"
+            className="font-bold lg:text-xl text-[12px] text-gray-400 dark:text-gray-400"
             strings={[
               "A FullStack Developer",
-              " A FrontEnd Developer"
+              "A FrontEnd Developer"
             ]}
             typeSpeed={120}
             backSpeed={120}

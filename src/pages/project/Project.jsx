@@ -51,11 +51,11 @@ function Project() {
 
   return (
     <>
-    {isLoading ? (
+    {isLoading && (
         <div className="h-[80vh] w-full flex justify-center items-center">
         <span className="loader"></span>
         </div>
-      ) : (
+      ) }
         <section className="md:w-[70%] lg:w-[85%] w-full flex flex-col justify-center">
         <div className="flex gap-5">
           <SideBar />
@@ -65,14 +65,14 @@ function Project() {
             </h2>
 
             <ul
-              data-aos="fade-in"
+             
               className="md:flex items-center justify-between md:text-[16] text-[13px] my-2 w-full hidden"
             >
               <li
                 onClick={() => filterProjects(null)}
                 className={`relative cursor-pointer ${
                   !activeFilter &&
-                  "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
+                  "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-0 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
                 }`}
               >
                 All
@@ -81,7 +81,7 @@ function Project() {
                 onClick={() => filterProjects("Landing Page")}
                 className={`relative cursor-pointer ${
                   activeFilter === "Landing Page" &&
-                  "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
+                  "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-0 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
                 }`}
               >
                 Landing Page
@@ -90,7 +90,7 @@ function Project() {
                 onClick={() => filterProjects("Freelance Project")}
                 className={`relative cursor-pointer ${
                   activeFilter === "Freelance Project" &&
-                  "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
+                  "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-0 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
                 }`}
               >
                 Freelance
@@ -108,7 +108,7 @@ function Project() {
                 onClick={() => filterProjects("Hackathon Project")}
                 className={`relative cursor-pointer ${
                   activeFilter === "Hackathon Project" &&
-                  "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-3 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
+                  "after:origin-left after:content after:w-full after:h-1 after:bg-blue-500 after:absolute after:-bottom-0 after:left-0 after:rounded-lg font-bold cursor-pointer after:transition-all after:duration-300 ease-in-out"
                 }`}
               >
                 Hackathon
@@ -139,8 +139,6 @@ function Project() {
           </div>
         </div>
       </section>
-      )}
-      
     </>
   );
 }
