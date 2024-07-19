@@ -1,19 +1,14 @@
 import lava from "../project-image/lava.png";
 import blog from "../project-image/blog.png";
 import ecommerce from "../project-image/ecommerce.png";
-
 import portfolio from "../project-image/portfolio.png";
-
 import seo from "../project-image/seo-agency.png";
 import resume from "../project-image/resume.png";
 import space from "../project-image/space.png";
-
 import hackathon from "../project-image/hackathon.png";
 import projectManagement from "../project-image/Project-Management.png"
 import mightymeld from "../project-image/mightymeld.png";
-
 import technophilic from "../project-image/technophilic.png";
-
 export const portfolioCards = [
   {
     id: 1,
@@ -155,6 +150,19 @@ export const portfolioCards = [
   },
   {
     id: 11,
+    name: "Mightyweld fun game",
+    github: "https://github.com/Abbalolo/my-mightymeld.git",
+    host: "https://mightyweld-submit.netlify.app",
+    image: mightymeld,
+    language: ["React", "Tailwind"],
+    description:
+      "A fun game.",
+    short: "A project management tool.",
+    category: "Hackathon Project",
+    
+  },
+  {
+    id: 12,
     name: "Mightyweld fun game",
     github: "https://github.com/Abbalolo/my-mightymeld.git",
     host: "https://mightyweld-submit.netlify.app",
