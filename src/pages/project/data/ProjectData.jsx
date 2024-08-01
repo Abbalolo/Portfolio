@@ -11,6 +11,7 @@ import projectManagement from "../project-image/Project-Management.png"
 import mightymeld from "../project-image/mightymeld.png";
 import technophilic from "../project-image/technophilic.png";
 import smartAlx from "../project-image/smartalx.png";
+import pasteey from "../project-image/pasteey.png";
 
 export const portfolioCards = [
   {
@@ -134,7 +135,7 @@ export const portfolioCards = [
       "A professional painting service and product sales website, offering quality services and products to customers.",
     short: "A painting service website.",
     achieve: "Technophilic Paints is a bespoke freelance website specializing in premium paint and tools for painting enthusiasts.",
-    category: "Freelance Project" || "Experience Project",
+    category: "Freelance Project",
     field: "Fullstack Developer"
   },
   {
@@ -164,6 +165,32 @@ export const portfolioCards = [
     category: "Hackathon Project",
     
   },
+  {
+    id: 12,
+    name: "Smart - Alx",
+    github: "https://github.com/Abbalolo/smartAlx.git",
+    host: "https://smartalx.netlify.app",
+    image: smartAlx,
+    language: ["Nextjs", "Tailwind", "Typescript"],
+    description:
+    "A web 3 website.",
+    short: "A web 3 website.",
+    category: "Personal Project",
+    
+  },
+  {
+    id: 13,
+    name: "Pasteey",
+    github: "https://github.com/Abbalolo/Pasteey.git",
+    host: "https://pasteey.netlify.app",
+    image: pasteey,
+    language: ["Nextjs", "Tailwind", "Typescript","Firebase","Shadcn ui"],
+    description:
+      "A copy & paste software that allow user to seemlessly share and store a link or a secreate phrase for futur use",
+    short: "A copy & paste software",
+    category: "Personal Project",
+    
+  },
   // {
   //   id: 12,
   //   name: "Risebot Metaverse",
@@ -177,17 +204,4 @@ export const portfolioCards = [
   //   category: "Personal Project",
     
   // },
-  {
-    id: 12,
-    name: "Smart - Alx",
-    github: "https://github.com/Abbalolo/smartAlx.git",
-    host: "https://smartalx.netlify.app",
-    image: smartAlx,
-    language: ["React", "Tailwind", "Typescript"],
-    description:
-      "A web 3 website.",
-    short: "A web 3 website.",
-    category: "Personal Project",
-    
-  },
 ];
