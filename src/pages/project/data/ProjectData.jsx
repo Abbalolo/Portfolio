@@ -1,3 +1,4 @@
+
 import lava from "../project-image/lava.png";
 import blog from "../project-image/blog.png";
 import ecommerce from "../project-image/ecommerce.png";
@@ -9,6 +10,8 @@ import hackathon from "../project-image/hackathon.png";
 import projectManagement from "../project-image/Project-Management.png"
 import mightymeld from "../project-image/mightymeld.png";
 import technophilic from "../project-image/technophilic.png";
+import smartAlx from "../project-image/smartalx.png";
+
 export const portfolioCards = [
   {
     id: 1,
@@ -131,7 +134,7 @@ export const portfolioCards = [
       "A professional painting service and product sales website, offering quality services and products to customers.",
     short: "A painting service website.",
     achieve: "Technophilic Paints is a bespoke freelance website specializing in premium paint and tools for painting enthusiasts.",
-    category: "Experience Project",
+    category: "Freelance Project" || "Experience Project",
     field: "Fullstack Developer"
   },
   {
@@ -161,17 +164,30 @@ export const portfolioCards = [
     category: "Hackathon Project",
     
   },
+  // {
+  //   id: 12,
+  //   name: "Risebot Metaverse",
+  //   github: "https://github.com/Abbalolo/risebot-metaverse.git",
+  //   host: "https://mightyweld-submit.netlify.app",
+  //   image: mightymeld,
+  //   language: ["React", "Tailwind", "Typescript"],
+  //   description:
+  //     "A web 3 website.",
+  //   short: "A web 3 website.",
+  //   category: "Personal Project",
+    
+  // },
   {
     id: 12,
-    name: "Mightyweld fun game",
-    github: "https://github.com/Abbalolo/my-mightymeld.git",
-    host: "https://mightyweld-submit.netlify.app",
-    image: mightymeld,
-    language: ["React", "Tailwind"],
+    name: "Smart - Alx",
+    github: "https://github.com/Abbalolo/smartAlx.git",
+    host: "https://smartalx.netlify.app",
+    image: smartAlx,
+    language: ["React", "Tailwind", "Typescript"],
     description:
-      "A fun game.",
-    short: "A project management tool.",
-    category: "Hackathon Project",
+      "A web 3 website.",
+    short: "A web 3 website.",
+    category: "Personal Project",
     
   },
 ];

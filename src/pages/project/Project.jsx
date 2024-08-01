@@ -52,7 +52,7 @@ function Project() {
   return (
     <>
     {isLoading && (
-        <div className="h-[80vh] w-full flex justify-center items-center">
+        <div className="h-[90vh] w-full flex justify-center items-center">
         <span className="loader"></span>
         </div>
       ) }
@@ -66,7 +66,7 @@ function Project() {
 
             <ul
              
-              className="md:flex items-center justify-between md:text-[16] text-[13px] my-2 w-full hidden"
+              className="md:flex items-center justify-between md:text-[16] text-[13px] my-2 w-full md:w-[30%] hidden"
             >
               <li
                 onClick={() => filterProjects(null)}
