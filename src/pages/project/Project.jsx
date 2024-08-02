@@ -66,7 +66,7 @@ function Project() {
 
             <ul
              
-              className="md:flex items-center justify-between md:text-[16] text-[13px] my-2 w-full md:w-[30%] hidden"
+              className="md:flex items-center justify-between md:text-[16] text-[13px] my-2 w-full lg:w-[35%] md:w-[50%] hidden"
             >
               <li
                 onClick={() => filterProjects(null)}

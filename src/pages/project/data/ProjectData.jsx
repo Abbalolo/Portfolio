@@ -12,6 +12,7 @@ import mightymeld from "../project-image/mightymeld.png";
 import technophilic from "../project-image/technophilic.png";
 import smartAlx from "../project-image/smartalx.png";
 import pasteey from "../project-image/pasteey.png";
+import risebot from "../project-image/risebot.png";
 
 export const portfolioCards = [
   {
@@ -191,17 +192,17 @@ export const portfolioCards = [
     category: "Personal Project",
     
   },
-  // {
-  //   id: 12,
-  //   name: "Risebot Metaverse",
-  //   github: "https://github.com/Abbalolo/risebot-metaverse.git",
-  //   host: "https://mightyweld-submit.netlify.app",
-  //   image: mightymeld,
-  //   language: ["React", "Tailwind", "Typescript"],
-  //   description:
-  //     "A web 3 website.",
-  //   short: "A web 3 website.",
-  //   category: "Personal Project",
+  {
+    id: 14,
+    name: "Risebot Metaverse",
+    github: "https://github.com/Abbalolo/risebot-metaverse.git",
+    host: "https://risebot-web3.netlify.app",
+    image: risebot,
+    language: ["React", "Tailwind", "Typescript"],
+    description:
+      "A web 3 website.",
+    short: "A web 3 website.",
+    category: "Personal Project",
     
-  // },
+  },
 ];
