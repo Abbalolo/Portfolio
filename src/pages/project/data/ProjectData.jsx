@@ -10,7 +10,7 @@ import hackathon from "../project-image/hackathon.png";
 import projectManagement from "../project-image/Project-Management.png"
 import mightymeld from "../project-image/mightymeld.png";
 import technophilic from "../project-image/technophilic.png";
-import smartAlx from "../project-image/smartalx.png";
+import smartAlx from "../project-image/smartAlx.png";
 import pasteey from "../project-image/pasteey.png";
 import risebot from "../project-image/risebot.png";
 
