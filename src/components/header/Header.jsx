@@ -9,12 +9,12 @@ function Header() {
   const [openNav, setOpenNav] = useState(false);
   const [theme, setTheme] = useState("light");
   const handleDownload = () => {
-   
-    const pdfUrl = "https://www.canva.com/design/DAFzJ9XhyNw/FIuabRqsddG5K6OS3GmvXA/view";
-    const anchor = document.createElement('a');
-    anchor.href = pdfUrl;
-    anchor.download = 'downloaded-file.pdf'; 
-    anchor.click();
+    const link = document.createElement("a");
+    link.href = "/Ibrahimresume.pdf"; 
+    link.download = "Ibrahim_Lawal_Abba.pdf"; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
 

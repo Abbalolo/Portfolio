@@ -52,7 +52,7 @@ function Project() {
   return (
     <>
     {isLoading && (
-        <div className="h-[90vh] w-full flex justify-center items-center">
+        <div className="h-[90vh] w-full fixed top-0 left-0 flex justify-center items-center">
         <span className="loader"></span>
         </div>
       ) }
