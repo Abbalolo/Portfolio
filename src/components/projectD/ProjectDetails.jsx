@@ -32,17 +32,18 @@ function ProjectDetails() {
                 </div>
             </div>
 
-            <div className='mt-2'>
+            {/* <div className='mt-2'>
                 <h2 className="font-semibold text-xl pt-2 pb-1 flex items-center gap-2"><BiWorld />Website</h2>
                 <Link to={host} className="text-blue-600 hover:underline cursor-pointer">{host}</Link>
-            </div>
+            </div> */}
 
             <div className='mt-2'>
                 <h2 className="font-semibold text-xl pt-2 pb-1 flex items-center gap-2"><AiFillGithub />GitHub</h2>
                 <Link to={github} className="text-blue-600 hover:underline cursor-pointer">{github}</Link>
             </div>
 
-            <Link className="mt-4 bg-blue-900 p-3 w-full  flex items-center justify-center gap-2 dark:text-[#f9f7f6]" to={host}>
+            <Link  target="_blank"
+  rel="noopener noreferrer" className="mt-4 bg-blue-900 p-3 w-full  flex items-center justify-center gap-2 dark:text-[#f9f7f6]" to={host}>
                 Open Project <BiLinkExternal className="text-[18px]" />
             </Link>
             </div>

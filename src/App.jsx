@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {motion} from "framer-motion"
 import { lazy, Suspense } from "react";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
@@ -13,6 +14,12 @@ const ProjectDetails = lazy(() => import("./components/projectD/ProjectDetails")
 
 function App() {
   return (
+    <motion.div
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    transition={{duration: 1.3}}
+    >
     <div className="h-full px-5 flex items-center flex-col justify-center md:px-10 lg:px-16 py-[70px] md:py-[90px] overflow-x-hidden bg-[#212529] dark:bg-[#f9f7f6] text-[#f9f7f6] dark:text-[#545454]">
       <BrowserRouter>
         <Header />
@@ -94,6 +101,7 @@ function App() {
         <Footer />
       </BrowserRouter>
     </div>
+    </motion.div>
   );
 }
 
