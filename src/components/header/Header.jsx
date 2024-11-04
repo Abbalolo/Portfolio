@@ -3,11 +3,14 @@ import { Link, NavLink } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState, useEffect } from "react";
 import Blur from "../blur/Blur";
+
+
 import Typed from "react-typed";
 
 function Header() {
   const [openNav, setOpenNav] = useState(false);
   const [theme, setTheme] = useState("light");
+
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/Ibrahimresume.pdf"; 
