@@ -56,7 +56,7 @@ function Project() {
         <span className="loader"></span>
         </div>
       ) }
-        <section className="md:w-[70%] lg:w-[85%] w-full flex flex-col justify-center">
+        <section className=" w-full flex flex-col justify-center">
         <div className="flex gap-5">
           <SideBar />
           <div className="">

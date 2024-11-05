@@ -42,9 +42,11 @@ function Contact() {
         
 
   return (
-    <section className="mt-8 lg:mt-0 w-full  dark:text-black text-[#f9f7f6]">
+    <>
       <ToastContainer />
+    <section className="mt-8 flex gap-5 w-full  dark:text-black text-[#f9f7f6]">
       <SideBar/>
+      <div className="w-full">
       <h2
         data-aos="fade-left"
         className="py-1  font-extrabold text-2xl text-center md:text-4xl  text-blue-500 dark:text-blue-500 mb-5"
@@ -101,7 +103,9 @@ function Contact() {
           </div>
         </form>
       </div>
+      </div>
     </section>
+    </>
   );
   
 }

@@ -21,7 +21,7 @@ function Home() {
 
 
 {isLoading && (
-        <div className="bg-[#212529] absolute top-0 left-0 h-[100vh] z-50 w-full flex justify-center items-center">
+        <div className="bg-[#212529] fixed top-0 left-0 h-[100vh] z-50 w-full flex justify-center items-center">
         <span className="loader"></span>
         </div>
       ) }

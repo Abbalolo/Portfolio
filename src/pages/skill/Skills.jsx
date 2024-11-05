@@ -166,7 +166,7 @@ function Skills() {
   }, []);
 
   return (
-    <section className="md:w-[70%] lg:w-[85%] w-full lg:h-screen">
+    <section className="w-full lg:h-screen flex gap-5 items-start">
       <SideBar/>
       <div className="flex flex-col md:flex-row gap-5 ">
         

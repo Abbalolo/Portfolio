@@ -19,7 +19,7 @@ function Hero() {
   }, []);
   return (
     <section
-      className="flex lg:ml-20 md:ml-28 flex-col md:flex-row md:items-start   md:justify-start md:w-[70%] lg:w-[80%] w-full gap-3"
+      className="flex  flex-col md:flex-row  w-full gap-3"
       data-aos="fade-up"
     >
       <div className=" flex flex-col  justify-center border border-gray-600 dark:border-gray-300 p-5 rounded-md">
@@ -96,7 +96,7 @@ function Hero() {
             </li>
 
             <li className="list-disc dark:text-black text-[#f9f7f6]">
-              Love to playing{" "}
+              Love playing{" "}
               <span className="font-semibold text-gray-300 dark:text-gray-600 italic">
                 Video Game (Fifa)
               </span>{" "}

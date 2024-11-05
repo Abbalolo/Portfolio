@@ -13,6 +13,7 @@ import technophilic from "../project-image/technophilic.png";
 import smartAlx from "../project-image/smartAlx.png";
 import pasteey from "../project-image/pasteey.png";
 import risebot from "../project-image/risebot.png";
+import sayyes from "../project-image/sayyes.png";
 
 export const portfolioCards = [
   {
@@ -203,6 +204,18 @@ export const portfolioCards = [
       "A web 3 website.",
     short: "A web 3 website.",
     category: "Personal Project",
+    
+  },
+  {
+    id: 15,
+    name: "Say Yes",
+    host: "https://yes-mobile.netlify.app",
+    image: sayyes,
+    language: ["Javascript, Nextjs", "Tailwind", "Typescript", "Firebase"],
+    description:
+      "A PWA contract/Agreement web app thta helps businesses to sign digital contract and agreement",
+    short: "A contract/Agreement web app",
+    category: "Freelance Project",
     
   },
 ];
