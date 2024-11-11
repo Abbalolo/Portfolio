@@ -20,7 +20,7 @@ function Experience() {
     fetchExperience();
   }, []);
   return (
-    <div className="md:w-[70%] lg:w-[85%] w-full lg:h-screen dark:text-black text-[#f9f7f6]">
+    <div className="flex gap-5 dark:text-black text-[#f9f7f6]">
         <SideBar/>
       <div className="border  border-gray-600 dark:border-gray-300 rounded-md p-5 flex flex-col md:flex-row gap-5">
           {experienceCard.map((item) => (
