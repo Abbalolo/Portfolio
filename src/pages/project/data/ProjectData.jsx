@@ -215,7 +215,7 @@ export const portfolioCards = [
     description:
       "A PWA contract/Agreement web app thta helps businesses to sign digital contract and agreement",
     short: "A contract/Agreement web app",
-    category: "Freelance Project",
+    category: "Experience Project",
     
   },
 ];
