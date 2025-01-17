@@ -28,18 +28,18 @@ export const portfolioCards = [
     short: "A lava landing page ",
     category: "Landing Page",
   },
-  {
-    id: 2,
-    name: "Portfolio",
-    github: "https://github.com/Abbalolo/Mayor-portfolio.git",
-    host: "https://mayor-portfolio.netlify.app/",
-    image: portfolio,
-    language: ["HTML", "CSS", "JavaScript"],
-    description:
-      "A professional portfolio website showcasing the developer's skills, projects, and experience in an organized and visually appealing manner.",
-    short: "Freelance portfolio project",
-    category: "Freelance Project",
-  },
+  // {
+  //   id: 2,
+  //   name: "Portfolio",
+  //   github: "https://github.com/Abbalolo/Mayor-portfolio.git",
+  //   host: "https://mayor-portfolio.netlify.app/",
+  //   image: portfolio,
+  //   language: ["HTML", "CSS", "JavaScript"],
+  //   description:
+  //     "A professional portfolio website showcasing the developer's skills, projects, and experience in an organized and visually appealing manner.",
+  //   short: "Freelance portfolio project",
+  //   category: "Freelance Project",
+  // },
   {
     id: 3,
     name: "Blog",
@@ -89,18 +89,18 @@ export const portfolioCards = [
  
   
   
-  {
-    id: 6,
-    name: "Resume",
-    github: "https://github.com/Abbalolo/resume-builder.git",
-    host: "https://my-resume-builder-loh.netlify.app",
-    image: resume,
-    language: ["JavaScript", "HTML", "Tailwind CSS", "React"],
-    description:
-      "A professional resume builder that allows users to create and add their information, helping them present their skills and experiences effectively.",
-    short: "A resume builder",
-    category: "Personal Project",
-  },
+  // {
+  //   id: 6,
+  //   name: "Resume",
+  //   github: "https://github.com/Abbalolo/resume-builder.git",
+  //   host: "https://my-resume-builder-loh.netlify.app",
+  //   image: resume,
+  //   language: ["JavaScript", "HTML", "Tailwind CSS", "React"],
+  //   description:
+  //     "A professional resume builder that allows users to create and add their information, helping them present their skills and experiences effectively.",
+  //   short: "A resume builder",
+  //   category: "Personal Project",
+  // },
   {
     id:7,
     name: "Space World",
