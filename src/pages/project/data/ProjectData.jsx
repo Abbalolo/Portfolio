@@ -14,6 +14,7 @@ import smartAlx from "../project-image/smartAlx.png";
 import pasteey from "../project-image/pasteey.png";
 import risebot from "../project-image/risebot.png";
 import sayyes from "../project-image/sayyes.png";
+import hypa from "../project-image/hypa-p.png";
 
 export const portfolioCards = [
   {
@@ -215,6 +216,18 @@ export const portfolioCards = [
     description:
       "A PWA contract/Agreement web app thta helps businesses to sign digital contract and agreement",
     short: "A contract/Agreement web app",
+    category: "Experience Project",
+    
+  },
+  {
+    id: 16,
+    name: "Hypa",
+    host: "hypa.netlify.app",
+    image: hypa,
+    language: ["Nextjs", "Tailwind", "Typescript"],
+    description:
+      "web 3 website that allows users to create and manage their own NFTs, providing a user-friendly interface for minting, buying, and selling digital assets.",
+    short: "A web 3 website",
     category: "Experience Project",
     
   },

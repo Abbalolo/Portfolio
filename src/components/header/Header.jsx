@@ -5,22 +5,21 @@ import { useState, useEffect } from "react";
 import Blur from "../blur/Blur";
 
 
+
 import Typed from "react-typed";
 
 function Header() {
   const [openNav, setOpenNav] = useState(false);
   const [theme, setTheme] = useState("light");
 
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/Ibrahimresume.pdf"; 
-    link.download = "Ibrahim_Lawal_Abba.pdf"; 
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
-
+const handleDownload = () => {
+  const link = document.createElement("a");
+  link.href = "/Ibrahimresume.pdf"; 
+  link.download = "Ibrahim_Lawal_Abba.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   const handleToggleDarkMode = () => {
     const html = document.querySelector("html");
