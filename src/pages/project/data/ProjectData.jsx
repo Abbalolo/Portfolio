@@ -15,6 +15,7 @@ import pasteey from "../project-image/pasteey.png";
 import risebot from "../project-image/risebot.png";
 import sayyes from "../project-image/sayyes.png";
 import hypa from "../project-image/hypa-p.png";
+import joshEgesi from "../project-image/josh-egesi.png";
 
 export const portfolioCards = [
   {
@@ -228,6 +229,18 @@ export const portfolioCards = [
     description:
       "web 3 website that allows users to create and manage their own NFTs, providing a user-friendly interface for minting, buying, and selling digital assets.",
     short: "A web 3 website",
+    category: "Experience Project",
+    
+  },
+  {
+    id: 17,
+    name: "Josh Egesi",
+    host: "josh-egesi.netlify.app",
+    image: joshEgesi,
+    language: ["Nextjs", "Tailwind", "Typescript"],
+    description:
+      "A web 3 website that showcases the portfolio and achievements of Josh Egesi, a prominent figure in the tech industry.",
+    short: "A Interior Designer Portfolio website",
     category: "Experience Project",
     
   },
