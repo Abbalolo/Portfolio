@@ -139,7 +139,7 @@ export const portfolioCards = [
       "A professional painting service and product sales website, offering quality services and products to customers.",
     short: "A painting service website.",
     achieve: "Technophilic Paints is a bespoke freelance website specializing in premium paint and tools for painting enthusiasts.",
-    category: "Freelance Project",
+    category: "Freelance Project" || "Experience Project",
     field: "Fullstack Developer"
   },
   {
@@ -217,7 +217,7 @@ export const portfolioCards = [
     description:
       "A PWA contract/Agreement web app thta helps businesses to sign digital contract and agreement",
     short: "A contract/Agreement web app",
-    category: "Experience Project",
+    category: "Freelance Project" || "Experience Project",
     
   },
   {
@@ -241,7 +241,7 @@ export const portfolioCards = [
     description:
       "A web 3 website that showcases the portfolio and achievements of Josh Egesi, a prominent figure in the tech industry.",
     short: "A Interior Designer Portfolio website",
-    category: "Experience Project",
+    category: "Freelance Project" || "Experience Project",
     
   },
 ];
