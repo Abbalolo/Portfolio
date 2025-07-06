@@ -223,7 +223,7 @@ export const portfolioCards = [
   {
     id: 16,
     name: "Hypa",
-    host: "hypa.netlify.app",
+    host: "https://hypa.netlify.app",
     image: hypa,
     language: ["Nextjs", "Tailwind", "Typescript"],
     description:
@@ -235,7 +235,7 @@ export const portfolioCards = [
   {
     id: 17,
     name: "Josh Egesi",
-    host: "josh-egesi.netlify.app",
+    host: "https://josh-egesi.netlify.app",
     image: joshEgesi,
     language: ["Nextjs", "Tailwind", "Typescript"],
     description:
