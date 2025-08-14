@@ -1,4 +1,3 @@
-
 import lava from "../project-image/lava.png";
 import blog from "../project-image/blog.png";
 import ecommerce from "../project-image/ecommerce.png";
@@ -16,6 +15,7 @@ import risebot from "../project-image/risebot.png";
 import sayyes from "../project-image/sayyes.png";
 import hypa from "../project-image/hypa-p.png";
 import joshEgesi from "../project-image/josh-egesi.png";
+import zidwell from "../project-image/zidwell.png";
 
 export const portfolioCards = [
   {
@@ -30,18 +30,18 @@ export const portfolioCards = [
     short: "A lava landing page ",
     category: "Landing Page",
   },
-  // {
-  //   id: 2,
-  //   name: "Portfolio",
-  //   github: "https://github.com/Abbalolo/Mayor-portfolio.git",
-  //   host: "https://mayor-portfolio.netlify.app/",
-  //   image: portfolio,
-  //   language: ["HTML", "CSS", "JavaScript"],
-  //   description:
-  //     "A professional portfolio website showcasing the developer's skills, projects, and experience in an organized and visually appealing manner.",
-  //   short: "Freelance portfolio project",
-  //   category: "Freelance Project",
-  // },
+  {
+    id: 2,
+    name: "Zidwell",
+    github: "https://github.com/Abbalolo/zidwell-dev.git",
+    host: "https://zidwell-dev.netlify.app",
+    image: zidwell,
+    language: ["HTML", "CSS", "JavaScript", "Nextjs", "API"],
+    description:
+      "Zidwell is a modern web application built with Next.js, designed to provide a seamless platform for managing podcasts, digital signatures, and user authentication. The app integrates with third-party services such as Paybeta and Supabase to offer secure wallet management, password resets, and real-time data handling.",
+    short: "A bill pyment Web App",
+    category: "Freelance Project",
+  },
   {
     id: 3,
     name: "Blog",
